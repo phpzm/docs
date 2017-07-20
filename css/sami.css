@@ -7,14 +7,18 @@ html, body, #content {
 #site-nav.navbar-default {
     margin: 0;
     border-radius: 0;
-    border-bottom: 1px solid #ccc;
-    background-color: #EDF3FE;
-    background-image: none;
+    border: 1px solid #1b415f;
+    background: #1b415f;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 20;
+    box-shadow: 3px 0 3px 3px rgba(0,0,0,.5);
 }
 
 #site-nav.navbar-default .navbar-brand,
 #site-nav.navbar-default .navbar-nav > li > a {
-    color: #000;
+    color: #ffffff;
 }
 
 #site-nav.navbar-default .navbar-nav > li > a:hover {
@@ -51,11 +55,13 @@ html, body, #content {
 
 #page-content {
     padding: 0 30px;
+    margin-top: 60px;
 }
 
 #left-column {
     width: 20%;
     position: fixed;
+    top: 0;
     height: 100%;
     border-right: 1px solid #ccc;
     line-height: 18px;
@@ -88,6 +94,7 @@ html, body, #content {
     overflow: auto;
     height: 100%;
     background-attachment: local;
+    margin-top: 55px;
 }
 
 #api-tree ul {
@@ -160,9 +167,12 @@ html, body, #content {
 /* Control panel, search form, version drop-down */
 
 #control-panel {
-    background: #e8e8e8;
+    background: #1b415f;
     border-bottom: 1px solid #666;
     padding: 4px;
+    box-shadow: -3px 0 3px 3px rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
 }
 
 #control-panel form {
