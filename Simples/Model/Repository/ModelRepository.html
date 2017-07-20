@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Model\Repository\ModelRepository | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Model_Repository_ModelRepository" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../Simples/Model.html">Model</a></li>
+                                        <li><a href="../../../Simples/Model/Repository.html">Repository</a></li>
+    
+                <li>ModelRepository</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ModelRepository
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ModelRepository</strong>        (<a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class ModelRepository</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Simples/Model/Repository/Resource/ValidationParser.html"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Class ValidationParser
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        <a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a>
+                </td>
+                <td>$model</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseValidation">parseValidation</a>($validators)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidation"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidators">getValidators</a>(array $fields, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_getValidators"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseValidator">parseValidator</a>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidator"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseValidatorRules">parseValidatorRules</a>(array $validators, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidatorRules"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> $model, <a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a> $validator = null)
+        
+                                            <p>ApiRepository constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Simples\Model\Repository\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null, bool $trash = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recycle">recycle</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(array $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_search">search</a>(array $filter, array $order = null, int $start = null, int $end = null, bool $trash = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(array $filters, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transform">transform</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $binds)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModel">getModel</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidator">getValidator</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unique">unique</a>($record = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHashKey">getHashKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Model/Repository/ModelRepository.html"><abbr title="Simples\Model\Repository\ModelRepository">ModelRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(bool $logging = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_parseValidation">
+        <div class="location">in <a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidation"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/Resource/ValidationParser.php#L19">line 19</a></div>
+        <code>final                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>parseValidation</strong>($validators)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$validators</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidators">
+        <div class="location">in <a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_getValidators"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/Resource/ValidationParser.php#L29">line 29</a></div>
+        <code>final                    array
+    <strong>getValidators</strong>(array $fields, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseValidator">
+        <div class="location">in <a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidator"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/Resource/ValidationParser.php#L46">line 46</a></div>
+        <code>final            protected        array|null
+    <strong>parseValidator</strong>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseValidatorRules">
+        <div class="location">in <a href="../../../Simples/Model/Repository/Resource/ValidationParser.html#method_parseValidatorRules"><abbr title="Simples\Model\Repository\Resource\ValidationParser">ValidationParser</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/Resource/ValidationParser.php#L61">line 61</a></div>
+        <code>final            protected        array
+    <strong>parseValidatorRules</strong>(array $validators, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$validators</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L40">line 40</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> $model, <a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a> $validator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ApiRepository constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a></td>
+                <td>$validator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L50">line 50</a></div>
+        <code>        static            <abbr title="Simples\Model\Repository\$this">$this</abbr>
+    <strong>instance</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Simples\Model\Repository\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L61">line 61</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>create</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Error/SimplesValidationError.html"><abbr title="Simples\Data\Error\SimplesValidationError">SimplesValidationError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L86">line 86</a></div>
+        <code>                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>read</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null, bool $trash = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$trash</td>
+                <td>(false)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L101">line 101</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>update</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Error/SimplesValidationError.html"><abbr title="Simples\Data\Error\SimplesValidationError">SimplesValidationError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L133">line 133</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>destroy</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record, string $action = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Error/SimplesValidationError.html"><abbr title="Simples\Data\Error\SimplesValidationError">SimplesValidationError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recycle">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L147">line 147</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>recycle</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>|array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Error/SimplesValidationError.html"><abbr title="Simples\Data\Error\SimplesValidationError">SimplesValidationError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L158">line 158</a></div>
+        <code>                    int
+    <strong>count</strong>(array $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L171">line 171</a></div>
+        <code>                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>search</strong>(array $filter, array $order = null, int $start = null, int $end = null, bool $trash = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$order</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$end</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$trash</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L187">line 187</a></div>
+        <code>                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>find</strong>(array $filters, array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transform">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L197">line 197</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>transform</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $binds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$binds</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModel">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L209">line 209</a></div>
+        <code>                    <a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a>
+    <strong>getModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Model/ModelAbstract.html"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidator">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L217">line 217</a></div>
+        <code>                    <a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a>
+    <strong>getValidator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Validator.html"><abbr title="Simples\Data\Validator">Validator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unique">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L226">line 226</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>unique</strong>($record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L238">line 238</a></div>
+        <code>                    array
+    <strong>getFields</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHashKey">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L246">line 246</a></div>
+        <code>                    string
+    <strong>getHashKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Repository/ModelRepository.php#L256">line 256</a></div>
+        <code>                    <a href="../../../Simples/Model/Repository/ModelRepository.html"><abbr title="Simples\Model\Repository\ModelRepository">ModelRepository</abbr></a>
+    <strong>log</strong>(bool $logging = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$logging</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Model/Repository/ModelRepository.html"><abbr title="Simples\Model\Repository\ModelRepository">ModelRepository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

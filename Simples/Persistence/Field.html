@@ -1,0 +1,3476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Persistence\Field | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Persistence_Field" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Simples.html">Simples</a></li>
+                                        <li><a href="../../Simples/Persistence.html">Persistence</a></li>
+    
+                <li>Field</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Field
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Field</strong>        extends <a href="../../Simples/Persistence/FieldAbstract.html"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a>        (<a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TYPE_STRING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_DATETIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_BOOLEAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_DATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_INTEGER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_FLOAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_TEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_FILE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_ARRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AGGREGATOR_COUNT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AGGREGATOR_SUM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AGGREGATOR_MAX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>AGGREGATOR_MIN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_options"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_validators">
+                                        protected                                        array
+                </td>
+                <td>$validators</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_validators"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enum">
+                                        protected                                        array
+                </td>
+                <td>$enum</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_enum"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_referenced">
+                                        protected                                        array
+                </td>
+                <td>$referenced</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_referenced"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_references">
+                                        protected                                        <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+                </td>
+                <td>$references</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_references"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_from">
+                                        protected                                        <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </td>
+                <td>$from</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_from"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_calculated">
+                                        protected                                        callable
+                </td>
+                <td>$calculated</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_calculated"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_map">
+                                        protected                                        callable
+                </td>
+                <td>$map</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_map"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_supported">
+                                        protected                                        array
+                </td>
+                <td>$supported</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#property_supported"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($name, $arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method___call"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseName">parseName</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_parseName"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calculate">calculate</a>($record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_calculate"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefault">getDefault</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getDefault"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCalculated">isCalculated</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_isCalculated"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMutable">isMutable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_isMutable"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getOptions"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnum">getEnum</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getEnum"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferenced">getReferenced</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getReferenced"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferences">getReferences</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getReferences"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFrom">getFrom</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getFrom"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasFrom">hasFrom</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_hasFrom"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMap">getMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getMap"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidators">getValidators</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/FieldAbstract.html#method_getValidators"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $collection, string $name, string $type = null, array $options = [])
+        
+                                            <p>Field constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_make">make</a>(string $collection, string $name, string $type = null, array $options = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_option">option</a>(string $key, mixed $value = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_referencedBy">referencedBy</a>(string $class, string $target, string $name = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_referencesTo">referencesTo</a>(string $class, string $referenced, bool $nullable = false, string $name = null, bool $fusion = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enum">enum</a>(array $items)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nullable">nullable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calculated">calculated</a>(callable $callable)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_required">required</a>(array $rules = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optional">optional</a>(array $rules = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_from">from</a>(<a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $reference)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readonly">readonly</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reject">reject</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_primaryKey">primaryKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hashKey">hashKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validator">validator</a>(string|array $rule, array|string $options = null, bool $clear = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_string">string</a>(int  $size = 255)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_text">text</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_datetime">datetime</a>(string  $format = &#039;Y-m-d H:i:s&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_date">date</a>(string  $format = &#039;Y-m-d&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_integer">integer</a>(int  $size = 10)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_float">float</a>(int  $size = 10, int  $decimal = 4)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_file">file</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_boolean">boolean</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collection">collection</a>(string  $collection)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_name">name</a>(string  $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_type">type</a>(string  $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_label">label</a>(string  $label)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alias">alias</a>(string  $alias)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(bool  $create)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>(bool  $read)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(bool  $update)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recover">recover</a>(bool  $recover)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mutator">mutator</a>(callable  $mutation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCollection">getCollection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCollection">setCollection</a>(string  $collection)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string  $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setType">setType</a>(string  $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLabel">getLabel</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLabel">setLabel</a>(string  $label)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAlias">getAlias</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAlias">setAlias</a>(string  $alias)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPrimaryKey">isPrimaryKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryKey">setPrimaryKey</a>(bool  $primaryKey)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCreate">isCreate</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCreate">setCreate</a>(bool  $create)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRead">isRead</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRead">setRead</a>(bool  $read)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isUpdate">isUpdate</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUpdate">setUpdate</a>(bool  $update)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRecover">isRecover</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRecover">setRecover</a>(bool  $recover)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_default">default</a>(mixed  $default)
+        
+                                            <p>Class Field</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method___call"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L65">line 65</a></div>
+        <code>                    mixed
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseName">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_parseName"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L93">line 93</a></div>
+        <code>                    string
+    <strong>parseName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculate">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_calculate"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L108">line 108</a></div>
+        <code>                    mixed
+    <strong>calculate</strong>($record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefault">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getDefault"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L117">line 117</a></div>
+        <code>                    mixed
+    <strong>getDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCalculated">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_isCalculated"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L129">line 129</a></div>
+        <code>                    bool
+    <strong>isCalculated</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMutable">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_isMutable"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L137">line 137</a></div>
+        <code>                    bool
+    <strong>isMutable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getOptions"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L145">line 145</a></div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnum">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getEnum"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L153">line 153</a></div>
+        <code>                    array
+    <strong>getEnum</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferenced">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getReferenced"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L161">line 161</a></div>
+        <code>                    array
+    <strong>getReferenced</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferences">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getReferences"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L169">line 169</a></div>
+        <code>                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+    <strong>getReferences</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFrom">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getFrom"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L177">line 177</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>getFrom</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasFrom">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_hasFrom"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L185">line 185</a></div>
+        <code>                    bool
+    <strong>hasFrom</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMap">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getMap"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L193">line 193</a></div>
+        <code>                    callable
+    <strong>getMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidators">
+        <div class="location">in <a href="../../Simples/Persistence/FieldAbstract.html#method_getValidators"><abbr title="Simples\Persistence\FieldAbstract">FieldAbstract</abbr></a> at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/FieldAbstract.php#L201">line 201</a></div>
+        <code>                    array
+    <strong>getValidators</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L76">line 76</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $collection, string $name, string $type = null, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Field constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>([])</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L115">line 115</a></div>
+        <code>        static            <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>make</strong>(string $collection, string $name, string $type = null, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>([])</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_option">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L125">line 125</a></div>
+        <code>                    mixed
+    <strong>option</strong>(string $key, mixed $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_referencedBy">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L139">line 139</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>referencedBy</strong>(string $class, string $target, string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_referencesTo">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L163">line 163</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>referencesTo</strong>(string $class, string $referenced, bool $nullable = false, string $name = null, bool $fusion = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$referenced</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$nullable</td>
+                <td>(false)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fusion</td>
+                <td>(true)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enum">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L193">line 193</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>enum</strong>(array $items)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nullable">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L205">line 205</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>nullable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculated">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L215">line 215</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>calculated</strong>(callable $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_required">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L227">line 227</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>required</strong>(array $rules = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$rules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optional">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L240">line 240</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>optional</strong>(array $rules = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$rules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_from">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L253">line 253</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>from</strong>(<a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $reference)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td>$reference</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readonly">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L262">line 262</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>readonly</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reject">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L271">line 271</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>reject</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_primaryKey">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L281">line 281</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>primaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hashKey">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L290">line 290</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>hashKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validator">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L302">line 302</a></div>
+        <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
+    <strong>validator</strong>(string|array $rule, array|string $options = null, bool $clear = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$rule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td>('')</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$clear</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_string">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>string</strong>(int  $size = 255)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int </td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_text">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>text</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_datetime">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>datetime</strong>(string  $format = &#039;Y-m-d H:i:s&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_date">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>date</strong>(string  $format = &#039;Y-m-d&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_integer">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>integer</strong>(int  $size = 10)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int </td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_float">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>float</strong>(int  $size = 10, int  $decimal = 4)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int </td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int </td>
+                <td>$decimal</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_file">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>file</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_boolean">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>boolean</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collection">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>collection</strong>(string  $collection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_name">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>name</strong>(string  $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_type">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>type</strong>(string  $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_label">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>label</strong>(string  $label)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alias">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>alias</strong>(string  $alias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>create</strong>(bool  $create)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$create</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>read</strong>(bool  $read)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$read</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>update</strong>(bool  $update)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$update</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recover">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>recover</strong>(bool  $recover)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$recover</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mutator">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>mutator</strong>(callable  $mutation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable </td>
+                <td>$mutation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollection">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    string
+    <strong>getCollection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCollection">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setCollection</strong>(string  $collection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setName</strong>(string  $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    string
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setType">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setType</strong>(string  $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLabel">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    string
+    <strong>getLabel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabel">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setLabel</strong>(string  $label)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$label</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAlias">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    string
+    <strong>getAlias</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAlias">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setAlias</strong>(string  $alias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPrimaryKey">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    bool
+    <strong>isPrimaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryKey">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setPrimaryKey</strong>(bool  $primaryKey)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$primaryKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCreate">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    bool
+    <strong>isCreate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCreate">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setCreate</strong>(bool  $create)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$create</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRead">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    bool
+    <strong>isRead</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRead">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setRead</strong>(bool  $read)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$read</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isUpdate">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    bool
+    <strong>isUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpdate">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setUpdate</strong>(bool  $update)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$update</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRecover">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    bool
+    <strong>isRecover</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRecover">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>setRecover</strong>(bool  $recover)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$recover</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_default">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/persistence/src/Field.php#L55">line 55</a></div>
+        <code>                    Field
+    <strong>default</strong>(mixed  $default)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class Field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed </td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

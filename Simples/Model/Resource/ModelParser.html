@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Simples\Model\Resource\ModelParser | Simples</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Simples_Model_Resource_ModelParser" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Simples</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                                                            <li><a href="../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../Simples/Model.html">Model</a></li>
+                                        <li><a href="../../../Simples/Model/Resource.html">Resource</a></li>
+    
+                <li>ModelParser</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ModelParser
+                
+        </h1>
+    </div>
+
+    <p>    trait
+    <strong>ModelParser</strong>        (<a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class ModelParser</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFilterFields">parseFilterFields</a>(array $data = [])
+        
+                                            <p>Parse the filters of fields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFilterValues">parseFilterValues</a>(array $filters = [])
+        
+                                            <p>Parse the values of the fields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseReadRelations">parseReadRelations</a>(array $fields = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_previous">previous</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, string $hashKey, bool $trash = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Persistence/Filter.html"><abbr title="Simples\Persistence\Filter">Filter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestroyFilter">getDestroyFilter</a>(string $at, bool $trash = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_configureRecord">configureRecord</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null, bool $calculate = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveCalculated">resolveCalculated</a>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveMutation">resolveMutation</a>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveValue">resolveValue</a>(mixed $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAvoid">getAvoid</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJSON">getJSON</a>(int $options)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_parseFilterFields">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L28">line 28</a></div>
+        <code>            protected        array
+    <strong>parseFilterFields</strong>(array $data = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parse the filters of fields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseFilterValues">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L52">line 52</a></div>
+        <code>            protected        array
+    <strong>parseFilterValues</strong>(array $filters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parse the values of the fields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseReadRelations">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L75">line 75</a></div>
+        <code>            protected        array
+    <strong>parseReadRelations</strong>(array $fields = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_previous">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L107">line 107</a></div>
+        <code>            protected        <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>previous</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, string $hashKey, bool $trash = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hashKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$trash</td>
+                <td>(false)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestroyFilter">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L131">line 131</a></div>
+        <code>            protected        <a href="../../../Simples/Persistence/Filter.html"><abbr title="Simples\Persistence\Filter">Filter</abbr></a>
+    <strong>getDestroyFilter</strong>(string $at, bool $trash = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$at</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$trash</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Persistence/Filter.html"><abbr title="Simples\Persistence\Filter">Filter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configureRecord">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L145">line 145</a></div>
+        <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>configureRecord</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null, bool $calculate = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$previous</td>
+                <td>(null)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$calculate</td>
+                <td>(false)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveCalculated">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L185">line 185</a></div>
+        <code>            protected        mixed
+    <strong>resolveCalculated</strong>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$previous</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveMutation">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L199">line 199</a></div>
+        <code>            protected        mixed
+    <strong>resolveMutation</strong>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveValue">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L209">line 209</a></div>
+        <code>            protected        mixed
+    <strong>resolveValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAvoid">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L220">line 220</a></div>
+        <code>            protected        array
+    <strong>getAvoid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJSON">
+        <div class="location">at         <a href="https://github.com/phpzm/core/blob/master/model/src/Resource/ModelParser.php#L235">line 235</a></div>
+        <code>                    string
+    <strong>getJSON</strong>(int $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
