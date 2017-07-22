@@ -252,7 +252,7 @@
                     <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_read">read</a>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
+                    <a href="#method_read">read</a>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false, bool $clean = false)
         
                                             <p>Read records with the filters informed</p>                </div>
                 <div class="col-md-2"></div>
@@ -795,9 +795,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L30">line 30</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L31">line 31</a></div>
         <code>    abstract                <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>read</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
+    <strong>read</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false, bool $clean = false)
         </code>
     </h3>
     <div class="details">
@@ -825,6 +825,11 @@
                 <td>$trash</td>
                 <td>(false)</td>
             </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$clean</td>
+                <td>(false)</td>
+            </tr>
             </table>
 
             
@@ -845,7 +850,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L39">line 39</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L40">line 40</a></div>
         <code>    abstract                <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>update</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
         </code>
@@ -895,7 +900,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_destroy">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L47">line 47</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/ModelContract.php#L48">line 48</a></div>
         <code>    abstract                <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>destroy</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null)
         </code>

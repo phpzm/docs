@@ -363,7 +363,7 @@ created by client</td>
                     <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_read">read</a>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
+                    <a href="#method_read">read</a>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false, bool $clean = false)
         
                                             <p>Read records with the filters informed</p>                </div>
                 <div class="col-md-2"></div>
@@ -412,6 +412,17 @@ created by client</td>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaults">getDefaults</a>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_getDefaults"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -422,24 +433,90 @@ created by client</td>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    bool|array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_after">after</a>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+                    <a href="#method_after">after</a>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, mixed $extra = true)
         
                                             <p>Triggered after operation be executed, the changes made in Record has no effect in storage</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_after"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    array|bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getDefaults">getDefaults</a>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
+                    <a href="#method_afterDefault">afterDefault</a>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_getDefaults"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefault"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_afterDefaultCreate">afterDefaultCreate</a>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultCreate"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_afterDefaultRead">afterDefaultRead</a>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultRead"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_afterDefaultUpdate">afterDefaultUpdate</a>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultUpdate"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pivotModel">pivotModel</a>(array $referenced, string $relationship)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_pivotModel"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pivotRecover">pivotRecover</a>(array $data, string $local, string $relationship, string $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_pivotRecover"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pivotSynchronize">pivotSynchronize</a>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, string $local, string $relationship, string $source, string $target)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/Resource/ModelHook.html#method_pivotSynchronize"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -690,6 +767,17 @@ created by client</td>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pivot">pivot</a>(string $name, string $relationship, string $target, string $local = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/ModelAbstract.html#method_pivot"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
                 </div>
                 <div class="col-md-8 type">
@@ -764,6 +852,17 @@ created by client</td>
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/ModelAbstract.html#method_getCollection"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelationships">getRelationships</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Model/ModelAbstract.html#method_getRelationships"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -1325,9 +1424,9 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L98">line 98</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L99">line 99</a></div>
         <code>final                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>read</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
+    <strong>read</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false, bool $clean = false)
         </code>
     </h3>
     <div class="details">
@@ -1353,6 +1452,11 @@ created by client</td>
                     <tr>
                 <td>bool</td>
                 <td>$trash</td>
+                <td>(false)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$clean</td>
                 <td>(false)</td>
             </tr>
             </table>
@@ -1384,7 +1488,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L145">line 145</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L152">line 152</a></div>
         <code>final                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>update</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null, bool $trash = false)
         </code>
@@ -1451,7 +1555,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_destroy">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L208">line 208</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L215">line 215</a></div>
         <code>final                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>destroy</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null, string $alias = null)
         </code>
@@ -1513,7 +1617,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_filterFields">
-        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_filterFields"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L21">line 21</a></div>
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_filterFields"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L23">line 23</a></div>
         <code>final                    array
     <strong>filterFields</strong>(string $collection, string $method, bool $strict)
         </code>
@@ -1561,7 +1665,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_configureFields">
-        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_configureFields"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L41">line 41</a></div>
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_configureFields"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L43">line 43</a></div>
         <code>final                    
     <strong>configureFields</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
         </code>
@@ -1594,8 +1698,51 @@ created by client</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDefaults">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_getDefaults"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L59">line 59</a></div>
+        <code>final                    array
+    <strong>getDefaults</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_before">
-        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_before"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L59">line 59</a></div>
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_before"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L76">line 76</a></div>
         <code>final                    bool
     <strong>before</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
         </code>
@@ -1638,6 +1785,15 @@ created by client</td>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1645,9 +1801,9 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_after">
-        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_after"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L77">line 77</a></div>
-        <code>final                    bool
-    <strong>after</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_after"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L94">line 94</a></div>
+        <code>final                    bool|array
+    <strong>after</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, mixed $extra = true)
         </code>
     </h3>
     <div class="details">
@@ -1670,6 +1826,11 @@ created by client</td>
                 <td>$record</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$extra</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1677,7 +1838,7 @@ created by client</td>
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>bool|array</td>
             <td></td>
         </tr>
     </table>
@@ -1689,10 +1850,10 @@ created by client</td>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getDefaults">
-        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_getDefaults"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L96">line 96</a></div>
-        <code>final                    array
-    <strong>getDefaults</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
+                    <h3 id="method_afterDefault">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefault"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L120">line 120</a></div>
+        <code>final            protected        array|bool
+    <strong>afterDefault</strong>(string $action, <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data = [])
         </code>
     </h3>
     <div class="details">
@@ -1713,6 +1874,236 @@ created by client</td>
                 <td>$record</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDefaultCreate">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultCreate"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L136">line 136</a></div>
+        <code>final            protected        mixed
+    <strong>afterDefaultCreate</strong>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDefaultRead">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultRead"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L162">line 162</a></div>
+        <code>final            protected        mixed
+    <strong>afterDefaultRead</strong>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDefaultUpdate">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_afterDefaultUpdate"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L184">line 184</a></div>
+        <code>final            protected        mixed
+    <strong>afterDefaultUpdate</strong>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pivotModel">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_pivotModel"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L210">line 210</a></div>
+        <code>final            protected        mixed
+    <strong>pivotModel</strong>(array $referenced, string $relationship)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$referenced</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pivotRecover">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_pivotRecover"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L229">line 229</a></div>
+        <code>final            protected        array
+    <strong>pivotRecover</strong>(array $data, string $local, string $relationship, string $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$local</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1721,6 +2112,64 @@ created by client</td>
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pivotSynchronize">
+        <div class="location">in <a href="../../Simples/Model/Resource/ModelHook.html#method_pivotSynchronize"><abbr title="Simples\Model\Resource\ModelHook">ModelHook</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L256">line 256</a></div>
+        <code>final            protected        mixed
+    <strong>pivotSynchronize</strong>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, string $local, string $relationship, string $source, string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+                <td>$record</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$local</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>
@@ -2486,7 +2935,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_configure">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_configure"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L125">line 125</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_configure"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L131">line 131</a></div>
         <code>            protected        <abbr title="Simples\Model\$this">$this</abbr>
     <strong>configure</strong>(string $collection, string $primaryKey = &#039;id&#039;, string $relationship = &#039;&#039;)
         </code>
@@ -2545,7 +2994,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_instance">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_instance"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L159">line 159</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_instance"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L165">line 165</a></div>
         <code>        static            <abbr title="Simples\Model\$this">$this</abbr>
     <strong>instance</strong>()
         </code>
@@ -2573,7 +3022,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_recycle">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L273">line 273</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L280">line 280</a></div>
         <code>final                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>recycle</strong>(array|<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
         </code>
@@ -2622,7 +3071,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_count">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L296">line 296</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L303">line 303</a></div>
         <code>final                    int
     <strong>count</strong>(<a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
         </code>
@@ -2671,7 +3120,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_add"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L201">line 201</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_add"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L207">line 207</a></div>
         <code>            protected        <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>add</strong>(string $name, string $type = &#039;&#039;, array $options = [])
         </code>
@@ -2719,7 +3168,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_import">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_import"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L217">line 217</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_import"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L223">line 223</a></div>
         <code>            protected        <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>import</strong>(string $name, string $relationship, array $options = [])
         </code>
@@ -2777,8 +3226,52 @@ created by client</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_pivot">
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_pivot"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L250">line 250</a></div>
+        <code>            protected        
+    <strong>pivot</strong>(string $name, string $relationship, string $target, string $local = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$local</td>
+                <td>(null)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_get"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L242">line 242</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_get"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L266">line 266</a></div>
         <code>final                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>get</strong>(string $name)
         </code>
@@ -2816,7 +3309,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_has"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L251">line 251</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_has"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L275">line 275</a></div>
         <code>final                    bool
     <strong>has</strong>(string $name)
         </code>
@@ -2854,7 +3347,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_map">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_map"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L260">line 260</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_map"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L284">line 284</a></div>
         <code>                    
     <strong>map</strong>(string $source, string $target)
         </code>
@@ -2888,7 +3381,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getFields">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getFields"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L271">line 271</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getFields"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L295">line 295</a></div>
         <code>final                    
     <strong>getFields</strong>(string $action = &#039;&#039;, bool $strict = true)
         </code>
@@ -2922,7 +3415,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_hashKey">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_hashKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L295">line 295</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_hashKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L311">line 311</a></div>
         <code>final                    string
     <strong>hashKey</strong>()
         </code>
@@ -2950,7 +3443,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getParents">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getParents"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L303">line 303</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getParents"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L319">line 319</a></div>
         <code>final                    array
     <strong>getParents</strong>()
         </code>
@@ -2978,7 +3471,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getCollection">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getCollection"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L311">line 311</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getCollection"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L327">line 327</a></div>
         <code>final                    string
     <strong>getCollection</strong>()
         </code>
@@ -3005,8 +3498,36 @@ created by client</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getRelationships">
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getRelationships"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L335">line 335</a></div>
+        <code>final                    array
+    <strong>getRelationships</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPrimaryKey">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getPrimaryKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L319">line 319</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getPrimaryKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L343">line 343</a></div>
         <code>final                    string
     <strong>getPrimaryKey</strong>()
         </code>
@@ -3034,7 +3555,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getHashKey">
-        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getHashKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L327">line 327</a></div>
+        <div class="location">in <a href="../../Simples/Model/ModelAbstract.html#method_getHashKey"><abbr title="Simples\Model\ModelAbstract">ModelAbstract</abbr></a> at         <a href="https://github.com/phpzm/model/blob/master/src/ModelAbstract.php#L351">line 351</a></div>
         <code>final                    string
     <strong>getHashKey</strong>()
         </code>
@@ -3092,7 +3613,7 @@ created by client</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getActionFields">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L328">line 328</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/DataMapper.php#L335">line 335</a></div>
         <code>            protected        
     <strong>getActionFields</strong>(string $action, bool $strict = true)
         </code>
