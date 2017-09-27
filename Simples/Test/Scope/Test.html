@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Model\Resource\ModelHook | Simples</title>
+    <title>Simples\Test\Scope\Test | Simples</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Model_Resource_ModelHook" data-root-path="../../../">
+    <body id="class" data-name="class:Simples_Test_Scope_Test" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -65,56 +65,141 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
+                <li><span class="label label-default">class</span></li>
                                                             <li><a href="../../../Simples.html">Simples</a></li>
-                                        <li><a href="../../../Simples/Model.html">Model</a></li>
-                                        <li><a href="../../../Simples/Model/Resource.html">Resource</a></li>
+                                        <li><a href="../../../Simples/Test.html">Test</a></li>
+                                        <li><a href="../../../Simples/Test/Scope.html">Scope</a></li>
     
-                <li>ModelHook</li>
+                <li>Test</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ModelHook
+            Test
                 
         </h1>
     </div>
 
-    <p>    trait
-    <strong>ModelHook</strong>        (<a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php">View source</a>)
+    <p>    class
+    <strong>Test</strong>        implements
+        <a target="_blank" href="http://php.net/JsonSerializable">JsonSerializable</a>        (<a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Class ModelHook</p>                    </div>
+            <p>Class Testing</p>                    </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_uri">
+                                        protected                                        string
+                </td>
+                <td>$uri</td>
+                <td class="last">Endpoint of test</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_asserts">
+                                        protected                                        array
+                </td>
+                <td>$asserts</td>
+                <td class="last">List of asserts what will be executed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_header">
+                                        protected                                        <a href="../../../Simples/Test/Http/Header.html"><abbr title="Simples\Test\Http\Header">Header</abbr></a>
+                </td>
+                <td>$header</td>
+                <td class="last">Headers to be used in requests</td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    <abbr title="Simples\Test\Scope\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(string $method, string $name, string $path, callable $match, array $query = [], array $body = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Simples\Test\Scope\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_raw">raw</a>(string $method, string $name, string $path, callable $match, array $query = [], array $body = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_post">post</a>(string $name, string $path, array $body = null, callable $match = null, array $query = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $name, string $path, callable $match = null, array $query = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>(string $name, string $path, array $body = [], callable $match = null, array $query = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $name, string $path, callable $match = null, array $query = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_filterFields">filterFields</a>(string $collection, string $method, bool $strict)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_configureFields">configureFields</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+                    <a href="#method_headers">headers</a>(string $method, string $endpoint, mixed $body = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -125,49 +210,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getDefaults">getDefaults</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_before">before</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
-        
-                                            <p>This method is called before the operation be executed, the changes made in Record will be save</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    bool|array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_after">after</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, mixed $extra = true)
-        
-                                            <p>Triggered after operation be executed, the changes made in Record has no effect in storage</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array|bool
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_afterDefault">afterDefault</a>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_afterDefaultCreate">afterDefaultCreate</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+                    <a href="#method_run">run</a>(<a href="../../../Simples/Test/Http/Client.html"><abbr title="Simples\Test\Http\Client">Client</abbr></a> $client)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -178,32 +221,9 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_afterDefaultRead">afterDefaultRead</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_afterDefaultUpdate">afterDefaultUpdate</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    boolean
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_afterDefaultDestroy">afterDefaultDestroy</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Specify data which should be serialized to JSON</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -213,10 +233,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_filterFields">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L23">line 23</a></div>
-        <code>final                    array
-    <strong>filterFields</strong>(string $collection, string $method, bool $strict)
+                    <h3 id="method_add">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L46">line 46</a></div>
+        <code>            protected        <abbr title="Simples\Test\Scope\$this">$this</abbr>
+    <strong>add</strong>(string $method, string $name, string $path, callable $match, array $query = [], array $body = [])
         </code>
     </h3>
     <div class="details">
@@ -227,19 +247,34 @@
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$collection</td>
-                <td></td>
-            </tr>
                     <tr>
                 <td>string</td>
                 <td>$method</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>bool</td>
-                <td>$strict</td>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$body</td>
                 <td></td>
             </tr>
             </table>
@@ -249,7 +284,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td><abbr title="Simples\Test\Scope\$this">$this</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -261,10 +296,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_configureFields">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L43">line 43</a></div>
-        <code>final                    
-    <strong>configureFields</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+                    <h3 id="method_raw">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L67">line 67</a></div>
+        <code>            protected        <abbr title="Simples\Test\Scope\$this">$this</abbr>
+    <strong>raw</strong>(string $method, string $name, string $path, callable $match, array $query = [], array $body = [])
         </code>
     </h3>
     <div class="details">
@@ -277,46 +312,32 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$action</td>
+                <td>$method</td>
                 <td></td>
             </tr>
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getDefaults">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L59">line 59</a></div>
-        <code>final                    array
-    <strong>getDefaults</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$action</td>
+                <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$body</td>
                 <td></td>
             </tr>
             </table>
@@ -326,7 +347,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td><abbr title="Simples\Test\Scope\$this">$this</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -338,35 +359,43 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_before">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L76">line 76</a></div>
-        <code>final                    bool
-    <strong>before</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
+                    <h3 id="method_post">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L87">line 87</a></div>
+        <code>            protected        <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+    <strong>post</strong>(string $name, string $path, array $body = null, callable $match = null, array $query = [])
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>This method is called before the operation be executed, the changes made in Record will be save</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$action</td>
+                <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
+                <td>string</td>
+                <td>$path</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$previous</td>
+                <td>array</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
                 <td></td>
             </tr>
             </table>
@@ -376,56 +405,209 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td><a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a></td>
             <td></td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_after">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L94">line 94</a></div>
-        <code>final                    bool|array
-    <strong>after</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, mixed $extra = true)
+                    <h3 id="method_get">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L99">line 99</a></div>
+        <code>            protected        <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+    <strong>get</strong>(string $name, string $path, callable $match = null, array $query = [])
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Triggered after operation be executed, the changes made in Record has no effect in storage</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$action</td>
+                <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L112">line 112</a></div>
+        <code>            protected        <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+    <strong>put</strong>(string $name, string $path, array $body = [], callable $match = null, array $query = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L124">line 124</a></div>
+        <code>            protected        <a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a>
+    <strong>delete</strong>(string $name, string $path, callable $match = null, array $query = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$match</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Test/Scope/Test.html"><abbr title="Simples\Test\Scope\Test">Test</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_headers">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L135">line 135</a></div>
+        <code>            protected        array
+    <strong>headers</strong>(string $method, string $endpoint, mixed $body = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$endpoint</td>
                 <td></td>
             </tr>
                     <tr>
                 <td>mixed</td>
-                <td>$extra</td>
+                <td>$body</td>
                 <td></td>
             </tr>
             </table>
@@ -435,7 +617,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool|array</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -447,10 +629,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_afterDefault">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L120">line 120</a></div>
-        <code>final            protected        array|bool
-    <strong>afterDefault</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data = [])
+                    <h3 id="method_run">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L147">line 147</a></div>
+        <code>                    array
+    <strong>run</strong>(<a href="../../../Simples/Test/Http/Client.html"><abbr title="Simples\Test\Http\Client">Client</abbr></a> $client)
         </code>
     </h3>
     <div class="details">
@@ -462,18 +644,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$action</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$data</td>
+                <td><a href="../../../Simples/Test/Http/Client.html"><abbr title="Simples\Test\Http\Client">Client</abbr></a></td>
+                <td>$client</td>
                 <td></td>
             </tr>
             </table>
@@ -483,7 +655,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array|bool</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -495,153 +667,27 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_afterDefaultCreate">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L135">line 135</a></div>
-        <code>final            protected        boolean
-    <strong>afterDefaultCreate</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
+                    <h3 id="method_jsonSerialize">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Test.php#L206">line 206</a></div>
+        <code>                    mixed
+    <strong>jsonSerialize</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Specify data which should be serialized to JSON</p>                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_afterDefaultRead">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L148">line 148</a></div>
-        <code>final            protected        mixed
-    <strong>afterDefaultRead</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, array $data)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$data</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
             <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_afterDefaultUpdate">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L158">line 158</a></div>
-        <code>final            protected        boolean
-    <strong>afterDefaultUpdate</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_afterDefaultDestroy">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelHook.php#L170">line 170</a></div>
-        <code>final            protected        boolean
-    <strong>afterDefaultDestroy</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>boolean</td>
-            <td></td>
+            <td>data which can be serialized by <b>json_encode</b>,
+which is a value of any type other than a resource.</td>
         </tr>
     </table>
 

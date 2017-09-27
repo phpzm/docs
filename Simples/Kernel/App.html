@@ -82,7 +82,7 @@
     </div>
 
     <p>    class
-    <strong>App</strong>        (<a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php">View source</a>)
+    <strong>App</strong>        extends <a href="../../Simples/Kernel/Base.html"><abbr title="Simples\Kernel\Base">Base</abbr></a>        (<a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php">View source</a>)
 </p>
 
         
@@ -93,19 +93,48 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_configs">
+                    static                    protected                                        array
+                </td>
+                <td>$configs</td>
+                <td class="last">On the fly configs of App gets on config folder</td>
+                <td><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#property_configs"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                    static                    protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last">Options of App behavior</td>
+                <td><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#property_options"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default">
+                    static                    protected                                        array
+                </td>
+                <td>$default</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $options)
+                    <a href="#method_setup">setup</a>(array $options = null)
         
-                                            <p>App constructor</p>                </div>
-                <div class="col-md-2"></div>
+                                            <p>Setup the options to App settings</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_setup"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -115,7 +144,7 @@
                     <a href="#method_options">options</a>(string $key = null, string $value = null)
         
                                             <p>Management to options of app</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_options"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -125,6 +154,16 @@
                     <a href="#method_config">config</a>(string $path)
         
                                             <p>Interface to get config values</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_config"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $options)
+        
+                                            <p>App constructor</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -215,10 +254,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L57">line 57</a></div>
-        <code>                    
-    <strong>__construct</strong>(array $options)
+                    <h3 id="method_setup">
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_setup"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L38">line 38</a></div>
+        <code>        static    protected        array
+    <strong>setup</strong>(array $options = null)
         </code>
     </h3>
     <div class="details">
@@ -226,7 +265,7 @@
     
 
                     <div class="method-description">
-                                    <p>App constructor</p>                    <p>Create a instance of App Handler</p>            </div>
+                                    <p>Setup the options to App settings</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -234,19 +273,20 @@
                     <tr>
                 <td>array</td>
                 <td>$options</td>
-                <td>([
-     'root' => string,
-     'lang' => array,
-     'labels' => boolean,
-     'headers' => array,
-     'type' => string
-     'separator' => string
-     'strict' => boolean
- ])</td>
+                <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -255,7 +295,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_options">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L97">line 97</a></div>
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_options"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L53">line 53</a></div>
         <code>        static            mixed
     <strong>options</strong>(string $key = null, string $value = null)
         </code>
@@ -300,7 +340,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_config">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L117">line 117</a></div>
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_config"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L73">line 73</a></div>
         <code>        static            mixed
     <strong>config</strong>(string $path)
         </code>
@@ -339,8 +379,49 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L63">line 63</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>App constructor</p>                    <p>Create a instance of App Handler</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>([
+     'root' => string,
+     'lang' => array,
+     'labels' => boolean,
+     'headers' => array,
+     'type' => string
+     'separator' => string
+     'filter' => string,
+     'avoid' => integer,
+     'strict' => boolean
+ ])</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_defaults">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L148">line 148</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L74">line 74</a></div>
         <code>        static            mixed
     <strong>defaults</strong>(string $class, string $property)
         </code>
@@ -385,7 +466,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_beautifulTrace">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L157">line 157</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L83">line 83</a></div>
         <code>        static            array
     <strong>beautifulTrace</strong>(array $trace)
         </code>
@@ -423,7 +504,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_logging">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L181">line 181</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L107">line 107</a></div>
         <code>        static            bool|null
     <strong>logging</strong>(bool $logging = null)
         </code>
@@ -463,7 +544,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_log">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L195">line 195</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L121">line 121</a></div>
         <code>        static            int
     <strong>log</strong>(array $data)
         </code>
@@ -503,7 +584,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pipe">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L212">line 212</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L138">line 138</a></div>
         <code>                    <a href="../../Simples/Kernel/App.html"><abbr title="Simples\Kernel\App">App</abbr></a>
     <strong>pipe</strong>(<a href="../../Simples/Kernel/Middleware.html"><abbr title="Simples\Kernel\Middleware">Middleware</abbr></a> $middleware, string $alias = &#039;&#039;)
         </code>
@@ -557,7 +638,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pipes">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L229">line 229</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L155">line 155</a></div>
         <code>                    <abbr title="Simples\Kernel\$this">$this</abbr>
     <strong>pipes</strong>(array $middlewares)
         </code>
@@ -597,7 +678,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_http">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L248">line 248</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L174">line 174</a></div>
         <code>                    mixed
     <strong>http</strong>(bool $output = true)
         </code>
@@ -646,7 +727,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cli">
-        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L262">line 262</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/App.php#L190">line 190</a></div>
         <code>                    
     <strong>cli</strong>(array $service)
         </code>

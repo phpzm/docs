@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Helper\Text | Simples</title>
+    <title>Simples\Test\App | Simples</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Helper_Text" data-root-path="../../">
+    <body id="class" data-name="class:Simples_Test_App" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -67,53 +67,111 @@
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
                                                             <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Helper.html">Helper</a></li>
+                                        <li><a href="../../Simples/Test.html">Test</a></li>
     
-                <li>Text</li>
+                <li>App</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Text
+            App
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>Text</strong>        (<a href="https://github.com/phpzm/helper/blob/master/src/Text.php">View source</a>)
+    <strong>App</strong>        extends <a href="../../Simples/Kernel/Base.html"><abbr title="Simples\Kernel\Base">Base</abbr></a>        (<a href="https://github.com/phpzm/test/blob/master/src/App.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Class Text</p>                    </div>
+            <p>Class App</p>                    </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_configs">
+                    static                    protected                                        array
+                </td>
+                <td>$configs</td>
+                <td class="last">On the fly configs of App gets on config folder</td>
+                <td><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#property_configs"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                    static                    protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last">Options of App behavior</td>
+                <td><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#property_options"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default">
+                    static                    protected                                        array
+                </td>
+                <td>$default</td>
+                <td class="last">Default properties of options</td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_replace">replace</a>(string $string, string|array $search, string|array $replace, int $count = null)
+                    <a href="#method_setup">setup</a>(array $options = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
+                                            <p>Setup the options to App settings</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_setup"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_replacex">replacex</a>($pattern, $replacement, $subject, int $limit = -1, null $count = null)
+                    <a href="#method_options">options</a>(string $key = null, string $value = null)
+        
+                                            <p>Management to options of app</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_options"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_config">config</a>(string $path)
+        
+                                            <p>Interface to get config values</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Kernel/Base.html#method_config"><abbr title="Simples\Kernel\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $options)
+        
+                                            <p>App constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(string $filename, array $results)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -121,32 +179,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_pad">pad</a>(string $input, string $length, string $char = null, int $type = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_replacement">replacement</a>(string $text, array $record)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;bool
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_contains">contains</a>(string $haystack, string $needle)
+                    <a href="#method_run">run</a>(array $arguments = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -159,39 +195,26 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_replace">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Text.php#L20">line 20</a></div>
-        <code>        static            string
-    <strong>replace</strong>(string $string, string|array $search, string|array $replace, int $count = null)
+                    <h3 id="method_setup">
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_setup"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L38">line 38</a></div>
+        <code>        static    protected        array
+    <strong>setup</strong>(array $options = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Setup the options to App settings</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$string</td>
+                <td>array</td>
+                <td>$options</td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td>string|array</td>
-                <td>$search</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string|array</td>
-                <td>$replace</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>int</td>
-                <td>$count</td>
-                <td>(null)</td>
             </tr>
             </table>
 
@@ -200,7 +223,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
@@ -212,44 +235,31 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_replacex">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Text.php#L36">line 36</a></div>
+                    <h3 id="method_options">
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_options"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L53">line 53</a></div>
         <code>        static            mixed
-    <strong>replacex</strong>($pattern, $replacement, $subject, int $limit = -1, null $count = null)
+    <strong>options</strong>(string $key = null, string $value = null)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Management to options of app</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$pattern</td>
-                <td></td>
+                <td>string</td>
+                <td>$key</td>
+                <td>(null) The id of option to get or set</td>
             </tr>
                     <tr>
-                <td></td>
-                <td>$replacement</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$subject</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>int</td>
-                <td>$limit</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>null</td>
-                <td>$count</td>
-                <td></td>
+                <td>string</td>
+                <td>$value</td>
+                <td>(null) The value to set</td>
             </tr>
             </table>
 
@@ -259,7 +269,7 @@
                     <table class="table table-condensed">
         <tr>
             <td>mixed</td>
-            <td></td>
+            <td>Returns the entire options if there is no $key &amp; no $value, else return the respective $option</td>
         </tr>
     </table>
 
@@ -270,39 +280,26 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_pad">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Text.php#L54">line 54</a></div>
-        <code>        static            string
-    <strong>pad</strong>(string $input, string $length, string $char = null, int $type = null)
+                    <h3 id="method_config">
+        <div class="location">in <a href="../../Simples/Kernel/Base.html#method_config"><abbr title="Simples\Kernel\Base">Base</abbr></a> at         <a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Base.php#L73">line 73</a></div>
+        <code>        static            mixed
+    <strong>config</strong>(string $path)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Interface to get config values</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$input</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$length</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$char</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>int</td>
-                <td>$type</td>
-                <td>(null)</td>
+                <td>$path</td>
+                <td>The path of config ex.: "app.name", equivalent to Name of App</td>
             </tr>
             </table>
 
@@ -311,8 +308,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
-            <td></td>
+            <td>mixed</td>
+            <td>Instance of stdClass with the all properties or the value available in path</td>
         </tr>
     </table>
 
@@ -323,10 +320,51 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_replacement">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Text.php#L64">line 64</a></div>
-        <code>        static            string
-    <strong>replacement</strong>(string $text, array $record)
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/App.php#L51">line 51</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>App constructor</p>                    <p>Create a instance of App Handler</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>([
+     'root' => string,
+     'lang' => array,
+     'labels' => boolean,
+     'headers' => array,
+     'type' => string
+     'separator' => string
+     'filter' => string,
+     'avoid' => integer,
+     'strict' => boolean
+ ])</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/App.php#L61">line 61</a></div>
+        <code>                    bool
+    <strong>log</strong>(string $filename, array $results)
         </code>
     </h3>
     <div class="details">
@@ -339,55 +377,12 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$text</td>
+                <td>$filename</td>
                 <td></td>
             </tr>
                     <tr>
                 <td>array</td>
-                <td>$record</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_contains">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Text.php#L80">line 80</a></div>
-        <code>        static            bool
-    <strong>contains</strong>(string $haystack, string $needle)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$haystack</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$needle</td>
+                <td>$results</td>
                 <td></td>
             </tr>
             </table>
@@ -402,6 +397,35 @@
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/App.php#L70">line 70</a></div>
+        <code>                    
+    <strong>run</strong>(array $arguments = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>

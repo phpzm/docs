@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Http\Kernel\App | Simples</title>
+    <title>Simples\Test\Scope\Environment | Simples</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Http_Kernel_App" data-root-path="../../../">
+    <body id="class" data-name="class:Simples_Test_Scope_Environment" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -67,75 +67,89 @@
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
                                                             <li><a href="../../../Simples.html">Simples</a></li>
-                                        <li><a href="../../../Simples/Http.html">Http</a></li>
-                                        <li><a href="../../../Simples/Http/Kernel.html">Kernel</a></li>
+                                        <li><a href="../../../Simples/Test.html">Test</a></li>
+                                        <li><a href="../../../Simples/Test/Scope.html">Scope</a></li>
     
-                <li>App</li>
+                <li>Environment</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            App
+            Environment
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>App</strong>        (<a href="https://github.com/phpzm/http/blob/master/src/Kernel/App.php">View source</a>)
+    <strong>Environment</strong>        (<a href="https://github.com/phpzm/test/blob/master/src/Scope/Environment.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Class App</p>                    </div>
+            <p>Class Environment</p>                    </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_source">
+                    static                                                            string
+                </td>
+                <td>$source</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filename">
+                    static                                                            string
+                </td>
+                <td>$filename</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;mixed
+                    static&nbsp;mixed|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_handle">handle</a>(array $middlewares = [], bool $output = true)
+                    <a href="#method_get">get</a>(string $index, bool $force = false)
         
-                                            <p>Used to catch http requests and handle response to their</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Simples/Http/Request.html"><abbr title="Simples\Http\Request">Request</abbr></a>
+                    static&nbsp;
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_request">request</a>()
+                    <a href="#method_set">set</a>(string $index, string $value)
         
-                                            <p>Singleton to Request to keep only one instance for each request</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    static&nbsp;bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_route">route</a>(string $uri)
+                    <a href="#method_read">read</a>()
         
-                                            <p>Simple helper to generate a valid route to resources of project</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../Simples/Http/Response.html"><abbr title="Simples\Http\Response">Response</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_response">response</a>()
-        
-                                            <p>Singleton to Response to keep only one instance for each request</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -145,101 +159,29 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_handle">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Kernel/App.php#L25">line 25</a></div>
-        <code>        static            mixed
-    <strong>handle</strong>(array $middlewares = [], bool $output = true)
+                    <h3 id="method_get">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Environment.php#L38">line 38</a></div>
+        <code>        static            mixed|null
+    <strong>get</strong>(string $index, bool $force = false)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Used to catch http requests and handle response to their</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$middlewares</td>
-                <td>Resume of middlewares to be solved</td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$output</td>
-                <td>(true) Define if the method will generate one output with the response</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td>The match response for requested resource</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_request">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Kernel/App.php#L73">line 73</a></div>
-        <code>        static            <a href="../../../Simples/Http/Request.html"><abbr title="Simples\Http\Request">Request</abbr></a>
-    <strong>request</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Singleton to Request to keep only one instance for each request</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Simples/Http/Request.html"><abbr title="Simples\Http\Request">Request</abbr></a></td>
-            <td>Request object populated by server data</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_route">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Kernel/App.php#L91">line 91</a></div>
-        <code>        static            string
-    <strong>route</strong>(string $uri)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Simple helper to generate a valid route to resources of project</p>                    <p>Ex.: <code>self::route('/download/images/picture.png')</code>, will print //localhost/download/images/picture.png</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$uri</td>
-                <td>Path to route</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
             </tr>
             </table>
 
@@ -248,11 +190,54 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>mixed|null</td>
             <td></td>
         </tr>
     </table>
 
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Environment.php#L50">line 50</a></div>
+        <code>        static            
+    <strong>set</strong>(string $index, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>
@@ -260,30 +245,37 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_response">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Kernel/App.php#L101">line 101</a></div>
-        <code>        static            <a href="../../../Simples/Http/Response.html"><abbr title="Simples\Http\Response">Response</abbr></a>
-    <strong>response</strong>()
+                    <h3 id="method_read">
+        <div class="location">at         <a href="https://github.com/phpzm/test/blob/master/src/Scope/Environment.php#L61">line 61</a></div>
+        <code>        static            bool
+    <strong>read</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Singleton to Response to keep only one instance for each request</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Simples/Http/Response.html"><abbr title="Simples\Http\Response">Response</abbr></a></td>
-            <td>The Response object to populated by request resolution</td>
+            <td>bool</td>
+            <td></td>
         </tr>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
