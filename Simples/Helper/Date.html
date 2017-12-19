@@ -210,17 +210,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_normalize">normalize</a>(string $date)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     int
                 </div>
                 <div class="col-md-8 type">
@@ -247,6 +236,17 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_diffDays">diffDays</a>(string $compare = &#039;today&#039;, bool $absolute = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalize">normalize</a>(string $date)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -282,7 +282,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L31">line 31</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L26">line 26</a></div>
         <code>                    
     <strong>__construct</strong>(string $time = &#039;today&#039;, string $format = null)
         </code>
@@ -327,7 +327,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L43">line 43</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L38">line 38</a></div>
         <code>        static            <a href="../../Simples/Helper/Date.html"><abbr title="Simples\Helper\Date">Date</abbr></a>
     <strong>create</strong>(string $time = &#039;today&#039;, string $format = null)
         </code>
@@ -370,7 +370,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_day">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L52">line 52</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L47">line 47</a></div>
         <code>        static            string
     <strong>day</strong>(string $date)
         </code>
@@ -408,7 +408,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_month">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L61">line 61</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L56">line 56</a></div>
         <code>        static            string
     <strong>month</strong>(string $date)
         </code>
@@ -446,7 +446,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_year">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L70">line 70</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L65">line 65</a></div>
         <code>        static            string
     <strong>year</strong>(string $date)
         </code>
@@ -484,7 +484,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_today">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L78">line 78</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L73">line 73</a></div>
         <code>        static            string
     <strong>today</strong>()
         </code>
@@ -512,7 +512,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_now">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L86">line 86</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L81">line 81</a></div>
         <code>        static            string
     <strong>now</strong>()
         </code>
@@ -540,7 +540,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValid">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L95">line 95</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L90">line 90</a></div>
         <code>        static            bool
     <strong>isValid</strong>($date)
         </code>
@@ -578,7 +578,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_nextMonth">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L106">line 106</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L101">line 101</a></div>
         <code>        static            string
     <strong>nextMonth</strong>(string $date, int $months)
         </code>
@@ -620,46 +620,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_normalize">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L136">line 136</a></div>
-        <code>        static            string
-    <strong>normalize</strong>(string $date)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$date</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_time">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L148">line 148</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L131">line 131</a></div>
         <code>                    int
     <strong>time</strong>($date)
         </code>
@@ -697,7 +659,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addDays">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L157">line 157</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L140">line 140</a></div>
         <code>                    string
     <strong>addDays</strong>($days)
         </code>
@@ -735,7 +697,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_diffDays">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L169">line 169</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L152">line 152</a></div>
         <code>                    int
     <strong>diffDays</strong>(string $compare = &#039;today&#039;, bool $absolute = false)
         </code>
@@ -777,8 +739,46 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_normalize">
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L164">line 164</a></div>
+        <code>        static            string
+    <strong>normalize</strong>(string $date)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_toString">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L180">line 180</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L175">line 175</a></div>
         <code>            protected        string
     <strong>toString</strong>()
         </code>
@@ -806,7 +806,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L188">line 188</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/helper/blob/master/src/Date.php#L183">line 183</a></div>
         <code>                    string
     <strong>__toString</strong>()
         </code>

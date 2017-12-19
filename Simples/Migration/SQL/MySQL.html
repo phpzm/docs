@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Migration\Driver | Simples</title>
+    <title>Simples\Migration\SQL\MySQL | Simples</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
-        <script src="../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -19,14 +19,14 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Migration_Driver" data-root-path="../../">
+    <body id="class" data-name="class:Simples_Migration_SQL_MySQL" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -48,16 +48,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../index.html">Simples</a>
+                <a class="navbar-brand" href="../../../index.html">Simples</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -65,31 +65,33 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">interface</span></li>
-                                                            <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Migration.html">Migration</a></li>
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Simples.html">Simples</a></li>
+                                        <li><a href="../../../Simples/Migration.html">Migration</a></li>
+                                        <li><a href="../../../Simples/Migration/SQL.html">SQL</a></li>
     
-                <li>Driver</li>
+                <li>MySQL</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Driver
+            MySQL
                 
         </h1>
     </div>
 
-    <p>    interface
-    <strong>Driver</strong>        (<a href="https://github.com/phpzm/migration/blob/master/src/Driver.php">View source</a>)
+    <p>    class
+    <strong>MySQL</strong>        implements
+        <a href="../../../Simples/Migration/Driver.html"><abbr title="Simples\Migration\Driver">Driver</abbr></a>        (<a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Interface Driver</p>                    </div>
+            <p>Class Driver</p>                    </div>
     
     
     
@@ -99,7 +101,7 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_create">create</a>(string $collection, array $fields)
@@ -110,7 +112,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_alter">alter</a>(string $collection, array $options)
@@ -121,7 +123,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_drop">drop</a>(string $collection)
@@ -132,10 +134,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_add">add</a>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+                    <a href="#method_add">add</a>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -143,10 +145,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_change">change</a>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+                    <a href="#method_change">change</a>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -154,10 +156,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+                    <a href="#method_remove">remove</a>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -171,8 +173,8 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L18">line 18</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L23">line 23</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
     <strong>create</strong>(string $collection, array $fields)
         </code>
     </h3>
@@ -201,7 +203,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -214,8 +216,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_alter">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L25">line 25</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L52">line 52</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
     <strong>alter</strong>(string $collection, array $options)
         </code>
     </h3>
@@ -244,7 +246,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -257,8 +259,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_drop">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L31">line 31</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L69">line 69</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
     <strong>drop</strong>(string $collection)
         </code>
     </h3>
@@ -282,7 +284,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -295,9 +297,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L38">line 38</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
-    <strong>add</strong>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L87">line 87</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+    <strong>add</strong>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         </code>
     </h3>
     <div class="details">
@@ -314,7 +316,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
                 <td>$field</td>
                 <td></td>
             </tr>
@@ -325,7 +327,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -338,9 +340,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_change">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L45">line 45</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
-    <strong>change</strong>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L105">line 105</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+    <strong>change</strong>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         </code>
     </h3>
     <div class="details">
@@ -357,7 +359,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
                 <td>$field</td>
                 <td></td>
             </tr>
@@ -368,7 +370,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -381,9 +383,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Driver.php#L52">line 52</a></div>
-        <code>                    <a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
-    <strong>remove</strong>(string $collection, <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/SQL/MySQL.php#L115">line 115</a></div>
+        <code>                    <a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a>
+    <strong>remove</strong>(string $collection, <a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field)
         </code>
     </h3>
     <div class="details">
@@ -400,7 +402,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td><a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
+                <td><a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a></td>
                 <td>$field</td>
                 <td></td>
             </tr>
@@ -411,7 +413,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
+            <td><a href="../../../Simples/Migration/Instruction.html"><abbr title="Simples\Migration\Instruction">Instruction</abbr></a></td>
             <td></td>
         </tr>
     </table>

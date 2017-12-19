@@ -201,11 +201,11 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getClausules">getClausules</a>()
+                    <a href="#method_getClauses">getClauses</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/Engine.html#method_getClausules"><abbr title="Simples\Persistence\Engine">Engine</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/Engine.html#method_getClauses"><abbr title="Simples\Persistence\Engine">Engine</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -244,11 +244,11 @@
                     null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_clausule">clausule</a>(string $clausule)
+                    <a href="#method_clause">clause</a>(string $clausule)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/Engine.html#method_clausule"><abbr title="Simples\Persistence\Engine">Engine</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Persistence/Engine.html#method_clause"><abbr title="Simples\Persistence\Engine">Engine</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -330,7 +330,7 @@
                     <a href="../../Simples/Migration/Revision.html"><abbr title="Simples\Migration\Revision">Revision</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_add">add</a>(<abbr title="Simples\Migration\mixed">mixed</abbr> $instructions, string $owner = &#039;&#039;, bool $once = false)
+                    <a href="#method_add">add</a>(<a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a> $migrant, string $owner = &#039;&#039;, bool $once = false)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -341,7 +341,7 @@
                     <a href="../../Simples/Migration/Revision.html"><abbr title="Simples\Migration\Revision">Revision</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_once">once</a>(<abbr title="Simples\Migration\mixed">mixed</abbr> $instructions, string $owner = &#039;&#039;)
+                    <a href="#method_once">once</a>(<a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a> $migrant, string $owner = &#039;&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -653,10 +653,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getClausules">
-        <div class="location">in <a href="../../Simples/Persistence/Engine.html#method_getClausules"><abbr title="Simples\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L136">line 136</a></div>
+                    <h3 id="method_getClauses">
+        <div class="location">in <a href="../../Simples/Persistence/Engine.html#method_getClauses"><abbr title="Simples\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L136">line 136</a></div>
         <code>                    array
-    <strong>getClausules</strong>()
+    <strong>getClauses</strong>()
         </code>
     </h3>
     <div class="details">
@@ -782,10 +782,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_clausule">
-        <div class="location">in <a href="../../Simples/Persistence/Engine.html#method_clausule"><abbr title="Simples\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L179">line 179</a></div>
+                    <h3 id="method_clause">
+        <div class="location">in <a href="../../Simples/Persistence/Engine.html#method_clause"><abbr title="Simples\Persistence\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L179">line 179</a></div>
         <code>                    null
-    <strong>clausule</strong>(string $clausule)
+    <strong>clause</strong>(string $clausule)
         </code>
     </h3>
     <div class="details">
@@ -1080,7 +1080,7 @@
                     <h3 id="method_add">
         <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Revision.php#L34">line 34</a></div>
         <code>            protected        <a href="../../Simples/Migration/Revision.html"><abbr title="Simples\Migration\Revision">Revision</abbr></a>
-    <strong>add</strong>(<abbr title="Simples\Migration\mixed">mixed</abbr> $instructions, string $owner = &#039;&#039;, bool $once = false)
+    <strong>add</strong>(<a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a> $migrant, string $owner = &#039;&#039;, bool $once = false)
         </code>
     </h3>
     <div class="details">
@@ -1092,8 +1092,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Simples\Migration\mixed">mixed</abbr></td>
-                <td>$instructions</td>
+                <td><a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a></td>
+                <td>$migrant</td>
                 <td></td>
             </tr>
                     <tr>
@@ -1126,9 +1126,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_once">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Revision.php#L50">line 50</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Revision.php#L46">line 46</a></div>
         <code>            protected        <a href="../../Simples/Migration/Revision.html"><abbr title="Simples\Migration\Revision">Revision</abbr></a>
-    <strong>once</strong>(<abbr title="Simples\Migration\mixed">mixed</abbr> $instructions, string $owner = &#039;&#039;)
+    <strong>once</strong>(<a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a> $migrant, string $owner = &#039;&#039;)
         </code>
     </h3>
     <div class="details">
@@ -1140,8 +1140,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Simples\Migration\mixed">mixed</abbr></td>
-                <td>$instructions</td>
+                <td><a href="../../Simples/Migration/Migrant.html"><abbr title="Simples\Migration\Migrant">Migrant</abbr></a></td>
+                <td>$migrant</td>
                 <td></td>
             </tr>
                     <tr>
@@ -1169,7 +1169,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstructions">
-        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Revision.php#L58">line 58</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/migration/blob/master/src/Revision.php#L54">line 54</a></div>
         <code>                    array
     <strong>getInstructions</strong>()
         </code>

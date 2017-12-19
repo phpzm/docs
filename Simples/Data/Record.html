@@ -251,6 +251,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array $public, array $private = [])
+        
+                                            <p>Update all data in Record</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
@@ -267,6 +277,16 @@
                     <a href="#method_values">values</a>(array $except = [])
         
                                             <p>Get the values of properties managed by Record</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_just">just</a>(array $keys = [])
+        
+                                            <p>Recover all values of the Record</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -410,7 +430,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_expose">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L368">line 368</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L412">line 412</a></div>
         <code>            protected        mixed
     <strong>expose</strong>()
         </code>
@@ -438,7 +458,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L51">line 51</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L53">line 53</a></div>
         <code>                    
     <strong>__construct</strong>(array|<a target="_blank" href="http://php.net/stdClass">stdClass</a> $data, bool $editable = true, array $mutations = [], array $private = [])
         </code>
@@ -484,7 +504,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_make">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L72">line 72</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L74">line 74</a></div>
         <code>        static            <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>make</strong>(array|<a target="_blank" href="http://php.net/stdClass">stdClass</a> $data, bool $editable = true, array $mutations = [], array $private = [])
         </code>
@@ -539,7 +559,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_parse">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L87">line 87</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L89">line 89</a></div>
         <code>        static            <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>parse</strong>($record)
         </code>
@@ -588,7 +608,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L110">line 110</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L112">line 112</a></div>
         <code>                    mixed
     <strong>__get</strong>(string $name)
         </code>
@@ -628,7 +648,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L124">line 124</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L126">line 126</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>__set</strong>(string $name, $value)
         </code>
@@ -673,7 +693,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L135">line 135</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L137">line 137</a></div>
         <code>                    mixed
     <strong>get</strong>(string $name)
         </code>
@@ -713,7 +733,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_set">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L147">line 147</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L149">line 149</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>set</strong>(string $name, mixed $value)
         </code>
@@ -767,7 +787,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_copy">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L164">line 164</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L166">line 166</a></div>
         <code>                    <abbr title="Simples\Data\$this">$this</abbr>
     <strong>copy</strong>(string $target, string $source, bool $override = false)
         </code>
@@ -817,7 +837,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L178">line 178</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L180">line 180</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>remove</strong>(string $name)
         </code>
@@ -866,7 +886,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_setPrivate">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L192">line 192</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L194">line 194</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>setPrivate</strong>(string $name)
         </code>
@@ -906,7 +926,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_setPublic">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L206">line 206</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L208">line 208</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>setPublic</strong>(string $name)
         </code>
@@ -946,7 +966,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_merge">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L223">line 223</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L225">line 225</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>merge</strong>(array $public, array $private = [])
         </code>
@@ -1000,7 +1020,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_import">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L243">line 243</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L245">line 245</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>import</strong>(array $public, array $private = [])
         </code>
@@ -1053,8 +1073,62 @@ which is a value of any type other than a resource.</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L265">line 265</a></div>
+        <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>update</strong>(array $public, array $private = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update all data in Record</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$public</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$private</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Data/Error/SimplesRecordReadonlyError.html"><abbr title="Simples\Data\Error\SimplesRecordReadonlyError">SimplesRecordReadonlyError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_keys">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L260">line 260</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L282">line 282</a></div>
         <code>                    array
     <strong>keys</strong>(array $except = [])
         </code>
@@ -1094,7 +1168,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_values">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L270">line 270</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L292">line 292</a></div>
         <code>                    array
     <strong>values</strong>(array $except = [])
         </code>
@@ -1133,8 +1207,48 @@ which is a value of any type other than a resource.</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_just">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L302">line 302</a></div>
+        <code>                    array
+    <strong>just</strong>(array $keys = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recover all values of the Record</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L280">line 280</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L321">line 321</a></div>
         <code>                    array
     <strong>all</strong>(array $except = [])
         </code>
@@ -1174,7 +1288,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_indexOf">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L297">line 297</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L341">line 341</a></div>
         <code>                    bool
     <strong>indexOf</strong>(string $name, bool $public = true)
         </code>
@@ -1219,7 +1333,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L310">line 310</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L354">line 354</a></div>
         <code>                    bool
     <strong>has</strong>(string $name)
         </code>
@@ -1259,7 +1373,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_isEditable">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L319">line 319</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L363">line 363</a></div>
         <code>                    bool
     <strong>isEditable</strong>()
         </code>
@@ -1289,7 +1403,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_isEmpty">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L328">line 328</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L372">line 372</a></div>
         <code>                    bool
     <strong>isEmpty</strong>()
         </code>
@@ -1319,7 +1433,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_size">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L337">line 337</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L381">line 381</a></div>
         <code>                    int
     <strong>size</strong>()
         </code>
@@ -1349,7 +1463,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_toJSON">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L346">line 346</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L390">line 390</a></div>
         <code>                    string
     <strong>toJSON</strong>()
         </code>
@@ -1379,7 +1493,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getIterator">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L358">line 358</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L402">line 402</a></div>
         <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
     <strong>getIterator</strong>()
         </code>
@@ -1410,7 +1524,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_on">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L379">line 379</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L423">line 423</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>on</strong>(string $name, callable $callable)
         </code>
@@ -1462,7 +1576,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_off">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L393">line 393</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Record.php#L437">line 437</a></div>
         <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>off</strong>(string $name)
         </code>

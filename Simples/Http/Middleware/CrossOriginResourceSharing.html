@@ -94,6 +94,18 @@
             <p>Class CrossOriginResourceSharing</p>                    </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PRE_FLIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -124,16 +136,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $origins = [])
-        
-                                            <p>CrossOriginResourceSharing constructor.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -160,6 +162,17 @@ to the next middleware component to create the response.</p>                </di
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_isPreFlight">isPreFlight</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCORS">isCORS</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -224,39 +237,8 @@ to the next middleware component to create the response.</p>                </di
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L53">line 53</a></div>
-        <code>                    
-    <strong>__construct</strong>(array $origins = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>CrossOriginResourceSharing constructor.</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$origins</td>
-                <td>([])</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_process">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L67">line 67</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L53">line 53</a></div>
         <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>process</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <a href="../../../Simples/Http/Contract/Delegate.html"><abbr title="Simples\Http\Contract\Delegate">Delegate</abbr></a> $delegate)
         </code>
@@ -302,7 +284,7 @@ to the next middleware component to create the response.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_validate">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L95">line 95</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L88">line 88</a></div>
         <code>            protected        bool
     <strong>validate</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
@@ -349,7 +331,7 @@ to the next middleware component to create the response.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_isPreFlight">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L113">line 113</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L107">line 107</a></div>
         <code>            protected        bool
     <strong>isPreFlight</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
         </code>
@@ -386,8 +368,46 @@ to the next middleware component to create the response.</p>                    
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_isCORS">
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L116">line 116</a></div>
+        <code>                    bool
+    <strong>isCORS</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_configurePreFlight">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L123">line 123</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L126">line 126</a></div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>configurePreFlight</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
         </code>
@@ -430,7 +450,7 @@ to the next middleware component to create the response.</p>                    
             </div>
                     <div class="method-item">
                     <h3 id="method_configureResponse">
-        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L140">line 140</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/http/blob/master/src/Middleware/CrossOriginResourceSharing.php#L147">line 147</a></div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>configureResponse</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
         </code>

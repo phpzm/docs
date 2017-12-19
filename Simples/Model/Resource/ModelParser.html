@@ -113,6 +113,17 @@
                     array
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_parseFilterRules">parseFilterRules</a>(array $filters, array $rules)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_parseFilterValues">parseFilterValues</a>(array $filters = [])
         
                                             <p>Parse the values of the fields</p>                </div>
@@ -225,7 +236,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_parseFilterFields">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L28">line 28</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L29">line 29</a></div>
         <code>            protected        array
     <strong>parseFilterFields</strong>(array $data = [])
         </code>
@@ -273,8 +284,51 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_parseFilterRules">
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L54">line 54</a></div>
+        <code>            protected        array
+    <strong>parseFilterRules</strong>(array $filters, array $rules)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$rules</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_parseFilterValues">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L52">line 52</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L72">line 72</a></div>
         <code>            protected        array
     <strong>parseFilterValues</strong>(array $filters = [])
         </code>
@@ -314,7 +368,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseReadRelations">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L75">line 75</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L95">line 95</a></div>
         <code>            protected        array
     <strong>parseReadRelations</strong>(array $fields = [])
         </code>
@@ -352,7 +406,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_previous">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L107">line 107</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L127">line 127</a></div>
         <code>            protected        <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>previous</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, string $hashKey, bool $trash = false)
         </code>
@@ -400,7 +454,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDestroyFilter">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L131">line 131</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L151">line 151</a></div>
         <code>            protected        <a href="../../../Simples/Persistence/Filter.html"><abbr title="Simples\Persistence\Filter">Filter</abbr></a>
     <strong>getDestroyFilter</strong>(string $at, bool $trash = false)
         </code>
@@ -443,7 +497,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_configureRecord">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L145">line 145</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L165">line 165</a></div>
         <code>                    <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
     <strong>configureRecord</strong>(string $action, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null, bool $calculate = true)
         </code>
@@ -496,7 +550,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveCalculated">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L185">line 185</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L205">line 205</a></div>
         <code>            protected        mixed
     <strong>resolveCalculated</strong>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $previous = null)
         </code>
@@ -544,7 +598,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveMutation">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L199">line 199</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L219">line 219</a></div>
         <code>            protected        mixed
     <strong>resolveMutation</strong>(<a href="../../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $field, <a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $record)
         </code>
@@ -587,7 +641,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveValue">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L209">line 209</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L229">line 229</a></div>
         <code>            protected        mixed
     <strong>resolveValue</strong>(mixed $value)
         </code>
@@ -625,7 +679,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAvoid">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L220">line 220</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L240">line 240</a></div>
         <code>            protected        array
     <strong>getAvoid</strong>()
         </code>
@@ -653,7 +707,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getJSON">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L235">line 235</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelParser.php#L255">line 255</a></div>
         <code>                    string
     <strong>getJSON</strong>(int $options)
         </code>

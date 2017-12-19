@@ -797,6 +797,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expression">expression</a>(string  $expression)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -1010,6 +1021,28 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setRecover">setRecover</a>(bool  $recover)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Field
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMigratory">setMigratory</a>(bool  $migratory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMigratory">isMigratory</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -1469,7 +1502,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L76">line 76</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L79">line 79</a></div>
         <code>                    
     <strong>__construct</strong>(string $collection, string $name, string $type = null, array $options = [])
         </code>
@@ -1515,7 +1548,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_make">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L115">line 115</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L120">line 120</a></div>
         <code>        static            <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>make</strong>(string $collection, string $name, string $type = null, array $options = [])
         </code>
@@ -1568,7 +1601,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_option">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L125">line 125</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L130">line 130</a></div>
         <code>                    mixed
     <strong>option</strong>(string $key, mixed $value = null)
         </code>
@@ -1611,7 +1644,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_referencedBy">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L139">line 139</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L144">line 144</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>referencedBy</strong>(string $class, string $target, string $name = null)
         </code>
@@ -1659,7 +1692,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_referencesTo">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L161">line 161</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L166">line 166</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>referencesTo</strong>(string $class, string $referenced, bool $nullable = false, string $name = null, bool $fusion = true)
         </code>
@@ -1726,7 +1759,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enum">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L191">line 191</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L198">line 198</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>enum</strong>(array $items)
         </code>
@@ -1764,7 +1797,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_nullable">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L203">line 203</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L210">line 210</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>nullable</strong>()
         </code>
@@ -1792,7 +1825,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_calculated">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L213">line 213</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L220">line 220</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>calculated</strong>(callable $callable)
         </code>
@@ -1830,7 +1863,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_required">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L225">line 225</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L232">line 232</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>required</strong>(array $rules = [])
         </code>
@@ -1868,7 +1901,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_optional">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L238">line 238</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L245">line 245</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>optional</strong>(array $rules = [])
         </code>
@@ -1906,7 +1939,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_from">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L251">line 251</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L258">line 258</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>from</strong>(<a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a> $reference)
         </code>
@@ -1944,7 +1977,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_readonly">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L260">line 260</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L267">line 267</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>readonly</strong>()
         </code>
@@ -1972,7 +2005,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reject">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L269">line 269</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L276">line 276</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>reject</strong>()
         </code>
@@ -2000,7 +2033,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_primaryKey">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L279">line 279</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L286">line 286</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>primaryKey</strong>()
         </code>
@@ -2028,7 +2061,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hashKey">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L288">line 288</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L295">line 295</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>hashKey</strong>()
         </code>
@@ -2056,7 +2089,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validator">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L300">line 300</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L307">line 307</a></div>
         <code>                    <a href="../../Simples/Persistence/Field.html"><abbr title="Simples\Persistence\Field">Field</abbr></a>
     <strong>validator</strong>(string|array $rule, array|string $options = null, bool $clear = false)
         </code>
@@ -2104,7 +2137,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_string">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>string</strong>(int  $size = 255)
         </code>
@@ -2142,7 +2175,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_text">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>text</strong>()
         </code>
@@ -2170,7 +2203,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_datetime">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>datetime</strong>(string  $format = &#039;Y-m-d H:i:s&#039;)
         </code>
@@ -2208,7 +2241,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_date">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>date</strong>(string  $format = &#039;Y-m-d&#039;)
         </code>
@@ -2246,7 +2279,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_integer">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>integer</strong>(int  $size = 10)
         </code>
@@ -2284,7 +2317,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_float">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>float</strong>(int  $size = 10, int  $decimal = 4)
         </code>
@@ -2327,7 +2360,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_file">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>file</strong>()
         </code>
@@ -2355,7 +2388,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_boolean">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>boolean</strong>()
         </code>
@@ -2383,7 +2416,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_collection">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>collection</strong>(string  $collection)
         </code>
@@ -2421,7 +2454,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_name">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>name</strong>(string  $name)
         </code>
@@ -2459,7 +2492,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_type">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>type</strong>(string  $type)
         </code>
@@ -2497,7 +2530,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_label">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>label</strong>(string  $label)
         </code>
@@ -2535,7 +2568,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_alias">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>alias</strong>(string  $alias)
         </code>
@@ -2573,7 +2606,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>create</strong>(bool  $create)
         </code>
@@ -2611,7 +2644,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>read</strong>(bool  $read)
         </code>
@@ -2649,7 +2682,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>update</strong>(bool  $update)
         </code>
@@ -2687,7 +2720,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_recover">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>recover</strong>(bool  $recover)
         </code>
@@ -2725,7 +2758,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mutator">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>mutator</strong>(callable  $mutation)
         </code>
@@ -2762,8 +2795,46 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_expression">
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
+        <code>                    Field
+    <strong>expression</strong>(string  $expression)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$expression</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getCollection">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    string
     <strong>getCollection</strong>()
         </code>
@@ -2791,7 +2862,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCollection">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setCollection</strong>(string  $collection)
         </code>
@@ -2829,7 +2900,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -2857,7 +2928,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setName">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setName</strong>(string  $name)
         </code>
@@ -2895,7 +2966,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getType">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    string
     <strong>getType</strong>()
         </code>
@@ -2923,7 +2994,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setType">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setType</strong>(string  $type)
         </code>
@@ -2961,7 +3032,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLabel">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    string
     <strong>getLabel</strong>()
         </code>
@@ -2989,7 +3060,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setLabel">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setLabel</strong>(string  $label)
         </code>
@@ -3027,7 +3098,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAlias">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    string
     <strong>getAlias</strong>()
         </code>
@@ -3055,7 +3126,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setAlias">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setAlias</strong>(string  $alias)
         </code>
@@ -3093,7 +3164,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isPrimaryKey">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    bool
     <strong>isPrimaryKey</strong>()
         </code>
@@ -3121,7 +3192,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPrimaryKey">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setPrimaryKey</strong>(bool  $primaryKey)
         </code>
@@ -3159,7 +3230,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isCreate">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    bool
     <strong>isCreate</strong>()
         </code>
@@ -3187,7 +3258,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setCreate">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setCreate</strong>(bool  $create)
         </code>
@@ -3225,7 +3296,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isRead">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    bool
     <strong>isRead</strong>()
         </code>
@@ -3253,7 +3324,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRead">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setRead</strong>(bool  $read)
         </code>
@@ -3291,7 +3362,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isUpdate">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    bool
     <strong>isUpdate</strong>()
         </code>
@@ -3319,7 +3390,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUpdate">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setUpdate</strong>(bool  $update)
         </code>
@@ -3357,7 +3428,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isRecover">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    bool
     <strong>isRecover</strong>()
         </code>
@@ -3385,7 +3456,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRecover">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>setRecover</strong>(bool  $recover)
         </code>
@@ -3422,8 +3493,74 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setMigratory">
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
+        <code>                    Field
+    <strong>setMigratory</strong>(bool  $migratory)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool </td>
+                <td>$migratory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Field</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMigratory">
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
+        <code>                    bool
+    <strong>isMigratory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_default">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L55">line 55</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Field.php#L58">line 58</a></div>
         <code>                    Field
     <strong>default</strong>(mixed  $default)
         </code>

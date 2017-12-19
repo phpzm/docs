@@ -415,7 +415,7 @@
                     <a href="../../Simples/Route/Router.html"><abbr title="Simples\Route\Router">Router</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_api">api</a>(mixed $path, string $class, array $settings = [])
+                    <a href="#method_api">api</a>(mixed $path, string $class, array $settings = [], array $options = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -1103,7 +1103,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolve">
-        <div class="location">in <a href="../../Simples/Route/Engine.html#method_resolve"><abbr title="Simples\Route\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/route/blob/master/src/Engine.php#L185">line 185</a></div>
+        <div class="location">in <a href="../../Simples/Route/Engine.html#method_resolve"><abbr title="Simples\Route\Engine">Engine</abbr></a> at         <a href="https://github.com/phpzm/route/blob/master/src/Engine.php#L186">line 186</a></div>
         <code>            protected        <a href="../../Simples/Route/Match.html"><abbr title="Simples\Route\Match">Match</abbr></a>
     <strong>resolve</strong>(string $method, string $uri, string $path, callable $callback, array $parameters, array $options)
         </code>
@@ -1317,9 +1317,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_api">
-        <div class="location">at         <a href="https://github.com/phpzm/route/blob/master/src/Router.php#L134">line 134</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/route/blob/master/src/Router.php#L135">line 135</a></div>
         <code>                    <a href="../../Simples/Route/Router.html"><abbr title="Simples\Route\Router">Router</abbr></a>
-    <strong>api</strong>(mixed $path, string $class, array $settings = [])
+    <strong>api</strong>(mixed $path, string $class, array $settings = [], array $options = [])
         </code>
     </h3>
     <div class="details">
@@ -1333,17 +1333,22 @@
                     <tr>
                 <td>mixed</td>
                 <td>$path</td>
-                <td></td>
+                <td>Route path URL</td>
             </tr>
                     <tr>
                 <td>string</td>
                 <td>$class</td>
-                <td></td>
+                <td>Controller to handler all callable</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$settings</td>
-                <td></td>
+                <td>List of $options to be all routes</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Apply $options to a specific callable ['callable' => []]</td>
             </tr>
             </table>
 
