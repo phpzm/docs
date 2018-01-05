@@ -133,7 +133,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_register">register</a>(array $values)
+                    <a href="#method_register">register</a>(array $values, bool $reset = true)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -144,7 +144,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_recover">recover</a>($values = [])
+                    <a href="#method_recover">recover</a>($values = [], bool $reset = true)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -155,7 +155,7 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_change">change</a>($values, $filters = [])
+                    <a href="#method_change">change</a>($values, $filters = [], bool $reset = true)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -166,7 +166,7 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>($filters)
+                    <a href="#method_remove">remove</a>($filters, bool $reset = true)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -245,7 +245,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L45">line 45</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L46">line 46</a></div>
         <code>                    
     <strong>__construct</strong>($id)
         </code>
@@ -276,7 +276,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L60">line 60</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L61">line 61</a></div>
         <code>                    <abbr title="Simples\Persistence\$this">$this</abbr>
     <strong>__call</strong>($name, $arguments)
         </code>
@@ -321,7 +321,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_driver">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L80">line 80</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L81">line 81</a></div>
         <code>            protected        <a href="../../Simples/Persistence/Driver.html"><abbr title="Simples\Persistence\Driver">Driver</abbr></a>
     <strong>driver</strong>()
         </code>
@@ -358,9 +358,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L92">line 92</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L95">line 95</a></div>
         <code>                    string
-    <strong>register</strong>(array $values)
+    <strong>register</strong>(array $values, bool $reset = true)
         </code>
     </h3>
     <div class="details">
@@ -376,6 +376,11 @@
                 <td>$values</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$reset</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -389,6 +394,15 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -396,9 +410,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_recover">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L101">line 101</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L110">line 110</a></div>
         <code>                    array
-    <strong>recover</strong>($values = [])
+    <strong>recover</strong>($values = [], bool $reset = true)
         </code>
     </h3>
     <div class="details">
@@ -412,6 +426,11 @@
                     <tr>
                 <td></td>
                 <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$reset</td>
                 <td></td>
             </tr>
             </table>
@@ -427,6 +446,15 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -434,9 +462,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_change">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L111">line 111</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L126">line 126</a></div>
         <code>                    int
-    <strong>change</strong>($values, $filters = [])
+    <strong>change</strong>($values, $filters = [], bool $reset = true)
         </code>
     </h3>
     <div class="details">
@@ -457,42 +485,9 @@
                 <td>$filters</td>
                 <td></td>
             </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_remove">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L120">line 120</a></div>
-        <code>                    int
-    <strong>remove</strong>($filters)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$filters</td>
+                <td>bool</td>
+                <td>$reset</td>
                 <td></td>
             </tr>
             </table>
@@ -508,6 +503,67 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L141">line 141</a></div>
+        <code>                    int
+    <strong>remove</strong>($filters, bool $reset = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$reset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -515,7 +571,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDriver">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L128">line 128</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L153">line 153</a></div>
         <code>                    <a href="../../Simples/Persistence/Driver.html"><abbr title="Simples\Persistence\Driver">Driver</abbr></a>
     <strong>getDriver</strong>()
         </code>
@@ -543,7 +599,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getClauses">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L136">line 136</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L161">line 161</a></div>
         <code>                    array
     <strong>getClauses</strong>()
         </code>
@@ -571,7 +627,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSettings">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L144">line 144</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L169">line 169</a></div>
         <code>                    array|mixed
     <strong>getSettings</strong>()
         </code>
@@ -599,7 +655,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reset">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L152">line 152</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L177">line 177</a></div>
         <code>                    
     <strong>reset</strong>()
         </code>
@@ -620,7 +676,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_merge">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L163">line 163</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L188">line 188</a></div>
         <code>                    bool
     <strong>merge</strong>(string $name, array $value)
         </code>
@@ -672,7 +728,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clause">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L179">line 179</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/Engine.php#L204">line 204</a></div>
         <code>                    null
     <strong>clause</strong>(string $clausule)
         </code>
