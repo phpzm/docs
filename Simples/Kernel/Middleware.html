@@ -66,10 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Kernel.html">Kernel</a></li>
-    
-                <li>Middleware</li>
+                        <li><a href="../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../Simples/Kernel.html">Kernel</a></li><li class="backslash">\</li><li>Middleware</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -81,7 +78,7 @@
         </h1>
     </div>
 
-    <p>    class
+    <p>abstract     class
     <strong>Middleware</strong>        (<a href="https://github.com/phpzm/kernel/blob/master/src/Kernel/Middleware.php">View source</a>)
 </p>
 
@@ -89,7 +86,7 @@
     
 
             <div class="description">
-            <p>Class Middleware</p>                    </div>
+            <p>Class Middleware</p>                                </div>
     
     
     
@@ -102,7 +99,7 @@
                 </td>
                 <td>$alias</td>
                 <td class="last">The name of middleware, must be a string without spaces and special chars
-preg<em>replace('/[^a-z0-9]/i', '</em>', $alias)</td>
+preg_replace('/[^a-z0-9]/i', '_', $alias)</td>
                 <td></td>
             </tr>
             </table>
@@ -139,7 +136,7 @@ preg<em>replace('/[^a-z0-9]/i', '</em>', $alias)</td>
     
 
                     <div class="method-description">
-                                    <p>Get the name of middleware to be used in pipes</p>                                </div>
+                                    <p>Get the name of middleware to be used in pipes</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

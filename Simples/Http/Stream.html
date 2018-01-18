@@ -66,10 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Http.html">Http</a></li>
-    
-                <li>Stream</li>
+                        <li><a href="../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../Simples/Http.html">Http</a></li><li class="backslash">\</li><li>Stream</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -90,7 +87,7 @@
     
 
             <div class="description">
-            <p>Class Stream</p>                    </div>
+            <p>Class Stream</p>                                </div>
     
     
     
@@ -357,7 +354,7 @@ reading data and read the stream until the end is reached.</p>
 <p>Warning: This could attempt to load a large amount of data into memory.</p>
 
 <p>This method MUST NOT raise an exception in order to conform with PHP's
-string casting operations.</p>            </div>
+string casting operations.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -396,7 +393,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Closes the stream and any underlying resources.</p>                                </div>
+                                    <p>Closes the stream and any underlying resources.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -426,7 +423,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Separates any underlying resources from the stream.</p>                    <p>After the stream has been detached, the stream is in an unusable state.</p>            </div>
+                                    <p>Separates any underlying resources from the stream.</p>                    <p>After the stream has been detached, the stream is in an unusable state.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -456,7 +453,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Attach a new stream/resource to the instance.</p>                                </div>
+                                    <p>Attach a new stream/resource to the instance.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -506,7 +503,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Get the size of the stream if known.</p>                                </div>
+                                    <p>Get the size of the stream if known.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -536,7 +533,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the current position of the file read/write pointer</p>                                </div>
+                                    <p>Returns the current position of the file read/write pointer</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -575,7 +572,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns true if the stream is at the end of the stream.</p>                                </div>
+                                    <p>Returns true if the stream is at the end of the stream.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -605,7 +602,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns whether or not the stream is seekable.</p>                                </div>
+                                    <p>Returns whether or not the stream is seekable.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -635,7 +632,7 @@ string casting operations.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Seek to a position in the stream.</p>                                </div>
+                                    <p>Seek to a position in the stream.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -650,8 +647,8 @@ string casting operations.</p>            </div>
                 <td>$whence</td>
                 <td>Specifies how the cursor position will be calculated
     based on the seek offset. Valid values are identical to the built-in
-    PHP $whence values for <code>fseek()</code>.  SEEK<em>SET: Set position equal to
-    offset bytes SEEK</em>CUR: Set position to current location plus offset
+    PHP $whence values for <code>fseek()</code>.  SEEK_SET: Set position equal to
+    offset bytes SEEK_CUR: Set position to current location plus offset
     SEEK_END: Set position to end-of-stream plus offset.</td>
             </tr>
             </table>
@@ -694,7 +691,7 @@ string casting operations.</p>            </div>
 
                     <div class="method-description">
                                     <p>Seek to the beginning of the stream.</p>                    <p>If the stream is not seekable, this method will raise an exception;
-otherwise, it will perform a seek(0).</p>            </div>
+otherwise, it will perform a seek(0).</p>                            </div>
                 <div class="tags">
             
             
@@ -733,7 +730,7 @@ otherwise, it will perform a seek(0).</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns whether or not the stream is writable.</p>                                </div>
+                                    <p>Returns whether or not the stream is writable.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -763,7 +760,7 @@ otherwise, it will perform a seek(0).</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Write data to the stream.</p>                                </div>
+                                    <p>Write data to the stream.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -812,7 +809,7 @@ otherwise, it will perform a seek(0).</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns whether or not the stream is readable.</p>                                </div>
+                                    <p>Returns whether or not the stream is readable.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -842,7 +839,7 @@ otherwise, it will perform a seek(0).</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Read data from the stream.</p>                                </div>
+                                    <p>Read data from the stream.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -894,7 +891,7 @@ otherwise, it will perform a seek(0).</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the remaining contents in a string</p>                                </div>
+                                    <p>Returns the remaining contents in a string</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -935,7 +932,7 @@ otherwise, it will perform a seek(0).</p>            </div>
 
                     <div class="method-description">
                                     <p>Get stream metadata as an associative array or retrieve a specific key.</p>                    <p>The keys returned are identical to the keys returned from PHP's
-stream<em>get</em>meta_data() function.</p>            </div>
+stream_get_meta_data() function.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

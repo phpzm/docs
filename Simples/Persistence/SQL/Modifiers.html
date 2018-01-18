@@ -66,11 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                                                            <li><a href="../../../Simples.html">Simples</a></li>
-                                        <li><a href="../../../Simples/Persistence.html">Persistence</a></li>
-                                        <li><a href="../../../Simples/Persistence/SQL.html">SQL</a></li>
-    
-                <li>Modifiers</li>
+                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Persistence.html">Persistence</a></li><li class="backslash">\</li><li><a href="../../../Simples/Persistence/SQL.html">SQL</a></li><li class="backslash">\</li><li>Modifiers</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -90,7 +86,7 @@
     
 
             <div class="description">
-            <p>Class Modifiers</p>                    </div>
+            <p>Class Modifiers</p>                                </div>
     
     
     
@@ -136,7 +132,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseWhere">parseWhere</a>(array $filters, string $separator)
+                    <a href="#method_parseWhere">parseWhere</a>(array|string $filters, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -147,7 +143,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseGroup">parseGroup</a>(array $groups, string $separator)
+                    <a href="#method_parseGroup">parseGroup</a>(array|string $groups, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -158,7 +154,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseOrder">parseOrder</a>(array $orders, string $separator)
+                    <a href="#method_parseOrder">parseOrder</a>(array|string $orders, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -169,7 +165,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseHaving">parseHaving</a>(array $having, string $separator)
+                    <a href="#method_parseHaving">parseHaving</a>(array|string $having, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -180,7 +176,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseLimit">parseLimit</a>(array $limits, string $separator)
+                    <a href="#method_parseLimit">parseLimit</a>(array|string $limits, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -194,7 +190,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_modifiers">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L29">line 29</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L30">line 30</a></div>
         <code>            protected        array
     <strong>modifiers</strong>(array $clausules, array $modifiers)
         </code>
@@ -275,7 +271,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseColumns">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L57">line 57</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L58">line 58</a></div>
         <code>            protected        string
     <strong>parseColumns</strong>(string $table, array|string $columns)
         </code>
@@ -327,7 +323,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseJoin">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L78">line 78</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L79">line 79</a></div>
         <code>            protected        string
     <strong>parseJoin</strong>(array $resources)
         </code>
@@ -365,9 +361,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseWhere">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L107">line 107</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L108">line 108</a></div>
         <code>            protected        string
-    <strong>parseWhere</strong>(array $filters, string $separator)
+    <strong>parseWhere</strong>(array|string $filters, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -379,7 +375,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$filters</td>
                 <td></td>
             </tr>
@@ -417,9 +413,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseGroup">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L143">line 143</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L147">line 147</a></div>
         <code>            protected        string
-    <strong>parseGroup</strong>(array $groups, string $separator)
+    <strong>parseGroup</strong>(array|string $groups, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -431,7 +427,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$groups</td>
                 <td></td>
             </tr>
@@ -460,9 +456,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseOrder">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L153">line 153</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L160">line 160</a></div>
         <code>            protected        string
-    <strong>parseOrder</strong>(array $orders, string $separator)
+    <strong>parseOrder</strong>(array|string $orders, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -474,7 +470,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$orders</td>
                 <td></td>
             </tr>
@@ -503,9 +499,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseHaving">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L163">line 163</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L173">line 173</a></div>
         <code>            protected        string
-    <strong>parseHaving</strong>(array $having, string $separator)
+    <strong>parseHaving</strong>(array|string $having, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -517,7 +513,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$having</td>
                 <td></td>
             </tr>
@@ -546,9 +542,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseLimit">
-        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L173">line 173</a></div>
+        <div class="location">at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L186">line 186</a></div>
         <code>            protected        string
-    <strong>parseLimit</strong>(array $limits, string $separator)
+    <strong>parseLimit</strong>(array|string $limits, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -560,7 +556,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$limits</td>
                 <td></td>
             </tr>

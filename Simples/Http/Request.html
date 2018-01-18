@@ -66,10 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Http.html">Http</a></li>
-    
-                <li>Request</li>
+                        <li><a href="../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../Simples/Http.html">Http</a></li><li class="backslash">\</li><li>Request</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -90,7 +87,7 @@
     
 
             <div class="description">
-            <p>Class Request</p>                    </div>
+            <p>Class Request</p>                                </div>
     
             <h2>Traits</h2>
 
@@ -711,7 +708,7 @@
 parameters derived from the request: e.g., the results of path
 match operations; the results of decrypting cookies; the results of
 deserializing non-form-encoded message bodies; etc. Attributes
-will be application and request specific, and CAN be mutable.</p>            </div>
+will be application and request specific, and CAN be mutable.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -746,7 +743,7 @@ getAttributes(). If the attribute has not been previously set, returns
 the default value as provided.</p>
 
 <p>This method obviates the need for a hasAttribute() method, as it allows
-specifying a default value to return if the attribute is not found.</p>            </div>
+specifying a default value to return if the attribute is not found.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -805,7 +802,7 @@ described in getAttributes().</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated attribute.</p>            </div>
+updated attribute.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -864,7 +861,7 @@ described in getAttributes().</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that removes
-the attribute.</p>            </div>
+the attribute.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -913,7 +910,7 @@ the attribute.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Gets the body of the message.</p>                                </div>
+                                    <p>Gets the body of the message.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -947,7 +944,7 @@ the attribute.</p>            </div>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return a new instance that has the
-new body stream.</p>            </div>
+new body stream.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1003,7 +1000,7 @@ return the contents of $_POST.</p>
 <p>Otherwise, this method may return any results of deserializing
 the request body content; as parsing returns structured content, the
 potential types MUST be arrays or objects only. A null value indicates
-the absence of body content.</p>            </div>
+the absence of body content.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1051,7 +1048,7 @@ instance with the deserialized parameters.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated body parameters.</p>            </div>
+updated body parameters.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1106,7 +1103,7 @@ updated body parameters.</p>            </div>
 an instance of Psr\Http\Message\UploadedFileInterface.</p>
 
 <p>These values MAY be prepared from $_FILES or the message body during
-instantiation, or MAY be injected via withUploadedFiles().</p>            </div>
+instantiation, or MAY be injected via withUploadedFiles().</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1139,7 +1136,7 @@ instantiation, or MAY be injected via withUploadedFiles().</p>            </div>
                     <div class="method-description">
                                     <p>Create a new instance with the specified uploaded files.</p>                    <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated body parameters.</p>            </div>
+updated body parameters.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1188,7 +1185,7 @@ updated body parameters.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Request constructor.</p>                                </div>
+                                    <p>Request constructor.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1357,7 +1354,7 @@ updated body parameters.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Retrieves the HTTP protocol version as a string.</p>                    <p>The string MUST contain only the HTTP version number (e.g., "1.1", "1.0").</p>            </div>
+                                    <p>Retrieves the HTTP protocol version as a string.</p>                    <p>The string MUST contain only the HTTP version number (e.g., "1.1", "1.0").</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1392,7 +1389,7 @@ updated body parameters.</p>            </div>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new protocol version.</p>            </div>
+new protocol version.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1449,7 +1446,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </code></pre>
 
 <p>While header names are not case-sensitive, getHeaders() will preserve the
-exact case in which headers were originally specified.</p>            </div>
+exact case in which headers were originally specified.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1481,7 +1478,7 @@ exact case in which headers were originally specified.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Checks if a header exists by the given case-insensitive name.</p>                                </div>
+                                    <p>Checks if a header exists by the given case-insensitive name.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1527,7 +1524,7 @@ exact case in which headers were originally specified.</p>            </div>
 case-insensitive header name.</p>
 
 <p>If the header does not appear in the message, this method MUST return an
-empty array.</p>            </div>
+empty array.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1578,7 +1575,7 @@ comma concatenation. For such headers, use getHeader() instead
 and supply your own delimiter when concatenating.</p>
 
 <p>If the header does not appear in the message, this method MUST return
-an empty string.</p>            </div>
+an empty string.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1625,7 +1622,7 @@ be preserved by this function, and returned from getHeaders().</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new and/or updated header and value.</p>            </div>
+new and/or updated header and value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1685,7 +1682,7 @@ exist previously, it will be added.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new header and/or value.</p>            </div>
+new header and/or value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1743,7 +1740,7 @@ new header and/or value.</p>            </div>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that removes
-the named header.</p>            </div>
+the named header.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1792,7 +1789,7 @@ unless a value was provided to the concrete implementation (see
 withRequestTarget() below).</p>
 
 <p>If no URI is available, and no request-target has been specifically
-provided, this method MUST return the string "/".</p>            </div>
+provided, this method MUST return the string "/".</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1829,7 +1826,7 @@ request-target, verbatim.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-changed request target.</p>            </div>
+changed request target.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1875,7 +1872,7 @@ modify the given string.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-changed request method.</p>            </div>
+changed request method.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1946,7 +1943,7 @@ the Host header in the returned request.</li>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new UriInterface instance.</p>            </div>
+new UriInterface instance.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1992,8 +1989,8 @@ new UriInterface instance.</p>            </div>
 
                     <div class="method-description">
                                     <p>Retrieve server parameters.</p>                    <p>Retrieves data related to the incoming request environment,
-typically derived from PHP's $<em>SERVER superglobal. The data IS NOT
-REQUIRED to originate from $</em>SERVER.</p>            </div>
+typically derived from PHP's $_SERVER superglobal. The data IS NOT
+REQUIRED to originate from $_SERVER.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2026,7 +2023,7 @@ REQUIRED to originate from $</em>SERVER.</p>            </div>
                                     <p>Retrieve cookies.</p>                    <p>Retrieves cookies sent by the client to the server.</p>
 
 <p>The data MUST be compatible with the structure of the $_COOKIE
-superglobal.</p>            </div>
+superglobal.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2056,8 +2053,8 @@ superglobal.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Return an instance with the specified cookies.</p>                    <p>The data IS NOT REQUIRED to come from the $<em>COOKIE superglobal, but MUST
-be compatible with the structure of $</em>COOKIE. Typically, this data will
+                                    <p>Return an instance with the specified cookies.</p>                    <p>The data IS NOT REQUIRED to come from the $_COOKIE superglobal, but MUST
+be compatible with the structure of $_COOKIE. Typically, this data will
 be injected at instantiation.</p>
 
 <p>This method MUST NOT update the related Cookie header of the request
@@ -2065,7 +2062,7 @@ instance, nor related values in the server params.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated cookie values.</p>            </div>
+updated cookie values.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2110,7 +2107,7 @@ updated cookie values.</p>            </div>
 <p>Note: the query params might not be in sync with the URI or server
 params. If you need to ensure you are only getting the original
 values, you may need to parse the query string from <code>getUri()-&gt;getQuery()</code>
-or from the <code>QUERY_STRING</code> server param.</p>            </div>
+or from the <code>QUERY_STRING</code> server param.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -2142,9 +2139,9 @@ or from the <code>QUERY_STRING</code> server param.</p>            </div>
                     <div class="method-description">
                                     <p>Return an instance with the specified query string arguments.</p>                    <p>These values SHOULD remain immutable over the course of the incoming
 request. They MAY be injected during instantiation, such as from PHP's
-$<em>GET superglobal, or MAY be derived from some other value such as the
+$_GET superglobal, or MAY be derived from some other value such as the
 URI. In cases where the arguments are parsed from the URI, the data
-MUST be compatible with what PHP's parse</em>str() would return for
+MUST be compatible with what PHP's parse_str() would return for
 purposes of how duplicate query parameters are handled, and how nested
 sets are handled.</p>
 
@@ -2153,7 +2150,7 @@ request, nor the values in the server params.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated query string arguments.</p>            </div>
+updated query string arguments.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

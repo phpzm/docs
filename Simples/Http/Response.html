@@ -66,10 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../Simples.html">Simples</a></li>
-                                        <li><a href="../../Simples/Http.html">Http</a></li>
-    
-                <li>Response</li>
+                        <li><a href="../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../Simples/Http.html">Http</a></li><li class="backslash">\</li><li>Response</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -596,7 +593,7 @@
     
 
                     <div class="method-description">
-                                    <p>Response constructor.</p>                                </div>
+                                    <p>Response constructor.</p>                                                </div>
                 <div class="tags">
             
             
@@ -660,7 +657,7 @@
     
 
                     <div class="method-description">
-                                    <p>Retrieves the HTTP protocol version as a string.</p>                    <p>The string MUST contain only the HTTP version number (e.g., "1.1", "1.0").</p>            </div>
+                                    <p>Retrieves the HTTP protocol version as a string.</p>                    <p>The string MUST contain only the HTTP version number (e.g., "1.1", "1.0").</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -695,7 +692,7 @@
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new protocol version.</p>            </div>
+new protocol version.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -735,7 +732,7 @@ new protocol version.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Checks if a header exists by the given case-insensitive name.</p>                                </div>
+                                    <p>Checks if a header exists by the given case-insensitive name.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -781,7 +778,7 @@ new protocol version.</p>            </div>
 case-insensitive header name.</p>
 
 <p>If the header does not appear in the message, this method MUST return an
-empty array.</p>            </div>
+empty array.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -832,7 +829,7 @@ comma concatenation. For such headers, use getHeader() instead
 and supply your own delimiter when concatenating.</p>
 
 <p>If the header does not appear in the message, this method MUST return
-an empty string.</p>            </div>
+an empty string.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -879,7 +876,7 @@ be preserved by this function, and returned from getHeaders().</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new and/or updated header and value.</p>            </div>
+new and/or updated header and value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -939,7 +936,7 @@ exist previously, it will be added.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-new header and/or value.</p>            </div>
+new header and/or value.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -997,7 +994,7 @@ new header and/or value.</p>            </div>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that removes
-the named header.</p>            </div>
+the named header.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1041,7 +1038,7 @@ the named header.</p>            </div>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return a new instance that has the
-new body stream.</p>            </div>
+new body stream.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1091,7 +1088,7 @@ new body stream.</p>            </div>
 
                     <div class="method-description">
                                     <p>Gets the response status code.</p>                    <p>The status code is a 3-digit integer result code of the server's attempt
-to understand and satisfy the request.</p>            </div>
+to understand and satisfy the request.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1127,7 +1124,7 @@ status code.</p>
 
 <p>This method MUST be implemented in such a way as to retain the
 immutability of the message, and MUST return an instance that has the
-updated status and reason phrase.</p>            </div>
+updated status and reason phrase.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1187,7 +1184,7 @@ updated status and reason phrase.</p>            </div>
 status line, the reason phrase value MAY be null. Implementations MAY
 choose to return the default RFC 7231 recommended reason phrase (or those
 listed in the IANA HTTP Status Code Registry) for the response's
-status code.</p>            </div>
+status code.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1234,7 +1231,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </code></pre>
 
 <p>While header names are not case-sensitive, getHeaders() will preserve the
-exact case in which headers were originally specified.</p>            </div>
+exact case in which headers were originally specified.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1266,7 +1263,7 @@ exact case in which headers were originally specified.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Gets the body of the message.</p>                                </div>
+                                    <p>Gets the body of the message.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1420,7 +1417,7 @@ exact case in which headers were originally specified.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>https://labs.omniti.com/labs/jsend</p>                                </div>
+                                    <p>https://labs.omniti.com/labs/jsend</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1979,7 +1976,7 @@ exact case in which headers were originally specified.</p>            </div>
     
 
                     <div class="method-description">
-                                    <p>Class Response</p>                                </div>
+                                    <p>Class Response</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 

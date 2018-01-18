@@ -66,11 +66,7 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../../Simples.html">Simples</a></li>
-                                        <li><a href="../../../Simples/Persistence.html">Persistence</a></li>
-                                        <li><a href="../../../Simples/Persistence/Drivers.html">Drivers</a></li>
-    
-                <li>MySQL</li>
+                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Persistence.html">Persistence</a></li><li class="backslash">\</li><li><a href="../../../Simples/Persistence/Drivers.html">Drivers</a></li><li class="backslash">\</li><li>MySQL</li>
             </ol>
         </div>
                 <div id="page-content">
@@ -90,7 +86,7 @@
     
 
             <div class="description">
-            <p>Class MySQL</p>                    </div>
+            <p>Class MySQL</p>                                </div>
     
             <h2>Traits</h2>
 
@@ -330,7 +326,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseWhere">parseWhere</a>(array $filters, string $separator)
+                    <a href="#method_parseWhere">parseWhere</a>(array|string $filters, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -341,7 +337,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseGroup">parseGroup</a>(array $groups, string $separator)
+                    <a href="#method_parseGroup">parseGroup</a>(array|string $groups, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -352,7 +348,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseOrder">parseOrder</a>(array $orders, string $separator)
+                    <a href="#method_parseOrder">parseOrder</a>(array|string $orders, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -363,7 +359,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseHaving">parseHaving</a>(array $having, string $separator)
+                    <a href="#method_parseHaving">parseHaving</a>(array|string $having, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -374,7 +370,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseLimit">parseLimit</a>(array $limits, string $separator)
+                    <a href="#method_parseLimit">parseLimit</a>(array|string $limits, string $separator)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -652,7 +648,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method___construct"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L35">line 35</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method___construct"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L34">line 34</a></div>
         <code>                    
     <strong>__construct</strong>(array $settings)
         </code>
@@ -662,7 +658,7 @@
     
 
                     <div class="method-description">
-                                    <p>SQLDriver constructor.</p>                                </div>
+                                    <p>SQLDriver constructor.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -676,6 +672,15 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -952,7 +957,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_modifiers">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_modifiers"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L29">line 29</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_modifiers"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L30">line 30</a></div>
         <code>            protected        array
     <strong>modifiers</strong>(array $clausules, array $modifiers)
         </code>
@@ -1033,7 +1038,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseColumns">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseColumns"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L57">line 57</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseColumns"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L58">line 58</a></div>
         <code>            protected        string
     <strong>parseColumns</strong>(string $table, array|string $columns)
         </code>
@@ -1085,7 +1090,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseJoin">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseJoin"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L78">line 78</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseJoin"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L79">line 79</a></div>
         <code>            protected        string
     <strong>parseJoin</strong>(array $resources)
         </code>
@@ -1123,9 +1128,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseWhere">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseWhere"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L107">line 107</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseWhere"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L108">line 108</a></div>
         <code>            protected        string
-    <strong>parseWhere</strong>(array $filters, string $separator)
+    <strong>parseWhere</strong>(array|string $filters, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -1137,7 +1142,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$filters</td>
                 <td></td>
             </tr>
@@ -1175,9 +1180,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseGroup">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseGroup"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L143">line 143</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseGroup"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L147">line 147</a></div>
         <code>            protected        string
-    <strong>parseGroup</strong>(array $groups, string $separator)
+    <strong>parseGroup</strong>(array|string $groups, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -1189,7 +1194,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$groups</td>
                 <td></td>
             </tr>
@@ -1218,9 +1223,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseOrder">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseOrder"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L153">line 153</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseOrder"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L160">line 160</a></div>
         <code>            protected        string
-    <strong>parseOrder</strong>(array $orders, string $separator)
+    <strong>parseOrder</strong>(array|string $orders, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -1232,7 +1237,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$orders</td>
                 <td></td>
             </tr>
@@ -1261,9 +1266,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseHaving">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseHaving"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L163">line 163</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseHaving"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L173">line 173</a></div>
         <code>            protected        string
-    <strong>parseHaving</strong>(array $having, string $separator)
+    <strong>parseHaving</strong>(array|string $having, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -1275,7 +1280,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$having</td>
                 <td></td>
             </tr>
@@ -1304,9 +1309,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseLimit">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseLimit"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L173">line 173</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Modifiers.html#method_parseLimit"><abbr title="Simples\Persistence\SQL\Modifiers">Modifiers</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Modifiers.php#L186">line 186</a></div>
         <code>            protected        string
-    <strong>parseLimit</strong>(array $limits, string $separator)
+    <strong>parseLimit</strong>(array|string $limits, string $separator)
         </code>
     </h3>
     <div class="details">
@@ -1318,7 +1323,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>array|string</td>
                 <td>$limits</td>
                 <td></td>
             </tr>
@@ -1808,7 +1813,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_start">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_start"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L45">line 45</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_start"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L44">line 44</a></div>
         <code>                    bool
     <strong>start</strong>()
         </code>
@@ -1836,7 +1841,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_commit">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_commit"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L53">line 53</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_commit"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L52">line 52</a></div>
         <code>                    bool
     <strong>commit</strong>()
         </code>
@@ -1864,7 +1869,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_rollback">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_rollback"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L61">line 61</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_rollback"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L60">line 60</a></div>
         <code>                    bool
     <strong>rollback</strong>()
         </code>
@@ -1892,7 +1897,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_create"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L73">line 73</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_create"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L72">line 72</a></div>
         <code>                    string
     <strong>create</strong>(array $clausules, array $values)
         </code>
@@ -1948,7 +1953,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_read"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L96">line 96</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_read"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L95">line 95</a></div>
         <code>                    array
     <strong>read</strong>(array $clausules, array $values = [])
         </code>
@@ -2000,7 +2005,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_update"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L133">line 133</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_update"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L131">line 131</a></div>
         <code>                    int
     <strong>update</strong>(array $clausules, array $values, array $filters)
         </code>
@@ -2061,7 +2066,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_destroy">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_destroy"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L156">line 156</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_destroy"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L154">line 154</a></div>
         <code>                    int
     <strong>destroy</strong>(array $clausules, array $values)
         </code>
@@ -2117,7 +2122,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_run"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L179">line 179</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_run"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L177">line 177</a></div>
         <code>                    int
     <strong>run</strong>(string $instruction, array $values = [])
         </code>
@@ -2173,7 +2178,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_query">
-        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_query"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L201">line 201</a></div>
+        <div class="location">in <a href="../../../Simples/Persistence/SQL/Driver.html#method_query"><abbr title="Simples\Persistence\SQL\Driver">Driver</abbr></a> at         <a href="https://github.com/phpzm/persistence/blob/master/src/SQL/Driver.php#L199">line 199</a></div>
         <code>                    array
     <strong>query</strong>(string $instruction, array $values = [])
         </code>
