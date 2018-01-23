@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Model\Resource\ModelAggregation | Simples</title>
+    <title>Simples\Data\Resources\ModelTrait | Simples</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Model_Resource_ModelAggregation" data-root-path="../../../">
+    <body id="class" data-name="class:Simples_Data_Resources_ModelTrait" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,40 +66,61 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Simples/Model/Resource.html">Resource</a></li><li class="backslash">\</li><li>ModelAggregation</li>
+                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Data.html">Data</a></li><li class="backslash">\</li><li><a href="../../../Simples/Data/Resources.html">Resources</a></li><li class="backslash">\</li><li>ModelTrait</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ModelAggregation
+            ModelTrait
                 
         </h1>
     </div>
 
     <p>    trait
-    <strong>ModelAggregation</strong>        (<a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php">View source</a>)
+    <strong>ModelTrait</strong>        (<a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Class ModelAggregation</p>                                </div>
+            <p>Trait CollectionModel</p>                                </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        mixed
+                </td>
+                <td>$model</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_higher">
+                                        protected                                        array
+                </td>
+                <td>$higher</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sum">sum</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method_model">model</a>($model)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -107,13 +128,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_min">min</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method___get">__get</a>($name)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>is utilized for reading data from inaccessible members.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -121,21 +141,13 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_max">max</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method___call">__call</a>($name, $arguments)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_aggregate">aggregate</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $alias, string $type, string $field = null, array $group = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Ex.:
+  $result = Collection::make([new Example('apple'), new Example('orange')])
+     ->map->each->getFruit()->getRecords();
+  var_dump($result);
+  ["elppa", "egnaro"]</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -145,10 +157,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_sum">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L21">line 21</a></div>
-        <code>                    float
-    <strong>sum</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <h3 id="method_model">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L28">line 28</a></div>
+        <code>                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>model</strong>($model)
         </code>
     </h3>
     <div class="details">
@@ -160,19 +172,9 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
+                <td>$model</td>
+                <td></td>
             </tr>
             </table>
 
@@ -181,7 +183,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td><a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -193,34 +195,84 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_min">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L32">line 32</a></div>
-        <code>                    mixed
-    <strong>min</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <h3 id="method___get">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L43">line 43</a></div>
+        <code>                    <a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>__get</strong>($name)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>is utilized for reading data from inaccessible members.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
+                <td></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L66">line 66</a></div>
+        <code>                    mixed
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Ex.:
+  $result = Collection::make([new Example('apple'), new Example('orange')])
+     ->map->each->getFruit()->getRecords();
+  var_dump($result);
+  ["elppa", "egnaro"]</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
             </tr>
             </table>
 
@@ -235,112 +287,15 @@
     </table>
 
             
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_max">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L43">line 43</a></div>
-        <code>                    mixed
-    <strong>max</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
+                            <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
+                <td><a href="../../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
             </tr>
             </table>
 
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_aggregate">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L56">line 56</a></div>
-        <code>                    mixed
-    <strong>aggregate</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $alias, string $type, string $field = null, array $group = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$alias</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$type</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$group</td>
-                <td>(null)</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
             
                     </div>
     </div>

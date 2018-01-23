@@ -79,7 +79,8 @@
     </div>
 
     <p>    class
-    <strong>Collection</strong>        extends <a href="../../Simples/Data/CollectionAbstract.html"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a>        (<a href="https://github.com/phpzm/data/blob/master/src/Collection.php">View source</a>)
+    <strong>Collection</strong>        extends <a href="../../Simples/Unit/Origin.html"><abbr title="Simples\Unit\Origin">Origin</abbr></a>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/Iterator">Iterator</a>        (<a href="https://github.com/phpzm/data/blob/master/src/Collection.php">View source</a>)
 </p>
 
         
@@ -94,11 +95,65 @@
     <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../Simples/Data/Resources/GroupRecords.html"><abbr title="Simples\Data\Resources\GroupRecords">GroupRecords</abbr></a>
+                                            <a href="../../Simples/Data/Resources/AccessTrait.html"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait AccessTrait
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/IteratorTrait.html"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait CollectionIterator
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/GroupTrait.html"><abbr title="Simples\Data\Resources\GroupTrait">GroupTrait</abbr></a>
                                             
                 </div>
                 <div class="col-md-6">
                     Trait Group
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/RecordsTrait.html"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait CollectionRecords
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/ModelTrait.html"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait CollectionModel
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/MutationTrait.html"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait CollectionMutation
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Simples/Data/Resources/ManipulationTrait.html"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Trait CollectionManipulation
                 </div>
             </div>
             </div>
@@ -113,7 +168,7 @@
                 </td>
                 <td>$records</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#property_records"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Simples/Data/Resources/RecordsTrait.html#property_records"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_model">
@@ -121,7 +176,7 @@
                 </td>
                 <td>$model</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../Simples/Data/Resources/ModelTrait.html#property_model"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_higher">
@@ -129,7 +184,7 @@
                 </td>
                 <td>$higher</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../Simples/Data/Resources/ModelTrait.html#property_higher"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_mutations">
@@ -137,7 +192,7 @@
                 </td>
                 <td>$mutations</td>
                 <td class="last"></td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../Simples/Data/Resources/MutationTrait.html#property_mutations"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a></small></td>
             </tr>
             </table>
 
@@ -164,40 +219,47 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_expose"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/RecordsTrait.html#method_expose"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_groupBy">groupBy</a>(array $properties)
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/GroupRecords.html#method_groupBy"><abbr title="Simples\Data\Resources\GroupRecords">GroupRecords</abbr></a></small></div>
+                                            <p>Whether a offset exists</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetExists"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_groupReduces">groupReduces</a>(array $array, string $property)
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/GroupRecords.html#method_groupReduces"><abbr title="Simples\Data\Resources\GroupRecords">GroupRecords</abbr></a></small></div>
+                                            <p>Offset to retrieve</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetGet"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_rewind">rewind</a>()
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_rewind"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                                            <p>Offset to set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetSet"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Offset to unset</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetUnset"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -208,7 +270,18 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/IteratorTrait.html#method_current"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewind">rewind</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/IteratorTrait.html#method_rewind"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -219,7 +292,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_key"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/IteratorTrait.html#method_key"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -230,7 +303,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_next"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/IteratorTrait.html#method_next"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -241,7 +314,29 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_valid"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/IteratorTrait.html#method_valid"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_groupBy">groupBy</a>(array $properties)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/GroupTrait.html#method_groupBy"><abbr title="Simples\Data\Resources\GroupTrait">GroupTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_groupReduces">groupReduces</a>(array $array, string $property)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/GroupTrait.html#method_groupReduces"><abbr title="Simples\Data\Resources\GroupTrait">GroupTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -252,7 +347,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_all"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/RecordsTrait.html#method_all"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -263,7 +358,141 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/CollectionAbstract.html#method_getRecords"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/RecordsTrait.html#method_getRecords"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_records">records</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/RecordsTrait.html#method_records"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_model">model</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ModelTrait.html#method_model"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>($name)
+        
+                                            <p>is utilized for reading data from inaccessible members.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ModelTrait.html#method___get"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($name, $arguments)
+        
+                                            <p>Ex.:
+  $result = Collection::make([new Example('apple'), new Example('orange')])
+     ->map->each->getFruit()->getRecords();
+  var_dump($result);
+  ["elppa", "egnaro"]</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ModelTrait.html#method___call"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_on">on</a>(string $field, callable $callable)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/MutationTrait.html#method_on"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_off">off</a>(string $field)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/MutationTrait.html#method_off"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_each">each</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_each"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_map"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>(callable $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_filter"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_size">size</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_size"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_length">length</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_length"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reduce">reduce</a>(callable $callable, mixed $initial)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Simples/Data/Resources/ManipulationTrait.html#method_reduce"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -281,107 +510,6 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_make">make</a>(array $records = [], mixed $model = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_model">model</a>($model)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___get">__get</a>($name)
-        
-                                            <p>is utilized for reading data from inaccessible members.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___call">__call</a>($name, $arguments)
-        
-                                            <p>Ex.:
-  $result = Collection::create([new Example('apple'), new Example('orange')])
-     ->map->each->getFruit()->getRecords();
-  var_dump($result);
-  ["elppa", "egnaro"]</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_each">each</a>(callable $callback)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_map">map</a>(callable $callback)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_filter">filter</a>(callable $callback)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_size">size</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_on">on</a>(string $field, callable $callable)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_off">off</a>(string $field)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -426,7 +554,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_expose">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_expose"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L92">line 92</a></div>
+        <div class="location">in <a href="../../Simples/Data/Resources/RecordsTrait.html#method_expose"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/RecordsTrait.php#L43">line 43</a></div>
         <code>            protected        mixed
     <strong>expose</strong>()
         </code>
@@ -453,8 +581,310 @@ which is a value of any type other than a resource.</td>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetExists"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L23">line 23</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether a offset exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>An offset to check for.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>true on success or false on failure.
+</p></p>
+
+<p>&lt;</p>
+
+<p>p>
+The return value will be casted to boolean if non-boolean was returned.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetGet"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L37">line 37</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Offset to retrieve</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to retrieve.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Can return all value types.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetSet"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L54">line 54</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Offset to set</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to assign the value to.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../Simples/Data/Resources/AccessTrait.html#method_offsetUnset"><abbr title="Simples\Data\Resources\AccessTrait">AccessTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L72">line 72</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Offset to unset</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_current">
+        <div class="location">in <a href="../../Simples/Data/Resources/IteratorTrait.html#method_current"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/IteratorTrait.php#L16">line 16</a></div>
+        <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
+    <strong>current</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewind">
+        <div class="location">in <a href="../../Simples/Data/Resources/IteratorTrait.html#method_rewind"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/IteratorTrait.php#L27">line 27</a></div>
+        <code>                    
+    <strong>rewind</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_key">
+        <div class="location">in <a href="../../Simples/Data/Resources/IteratorTrait.html#method_key"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/IteratorTrait.php#L35">line 35</a></div>
+        <code>                    mixed
+    <strong>key</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_next">
+        <div class="location">in <a href="../../Simples/Data/Resources/IteratorTrait.html#method_next"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/IteratorTrait.php#L44">line 44</a></div>
+        <code>                    mixed
+    <strong>next</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_valid">
+        <div class="location">in <a href="../../Simples/Data/Resources/IteratorTrait.html#method_valid"><abbr title="Simples\Data\Resources\IteratorTrait">IteratorTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/IteratorTrait.php#L53">line 53</a></div>
+        <code>                    bool
+    <strong>valid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_groupBy">
-        <div class="location">in <a href="../../Simples/Data/Resources/GroupRecords.html#method_groupBy"><abbr title="Simples\Data\Resources\GroupRecords">GroupRecords</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/GroupRecords.php#L22">line 22</a></div>
+        <div class="location">in <a href="../../Simples/Data/Resources/GroupTrait.html#method_groupBy"><abbr title="Simples\Data\Resources\GroupTrait">GroupTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/GroupTrait.php#L22">line 22</a></div>
         <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
     <strong>groupBy</strong>(array $properties)
         </code>
@@ -492,7 +922,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_groupReduces">
-        <div class="location">in <a href="../../Simples/Data/Resources/GroupRecords.html#method_groupReduces"><abbr title="Simples\Data\Resources\GroupRecords">GroupRecords</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/GroupRecords.php#L38">line 38</a></div>
+        <div class="location">in <a href="../../Simples/Data/Resources/GroupTrait.html#method_groupReduces"><abbr title="Simples\Data\Resources\GroupTrait">GroupTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/GroupTrait.php#L38">line 38</a></div>
         <code>            protected        array
     <strong>groupReduces</strong>(array $array, string $property)
         </code>
@@ -534,139 +964,8 @@ which is a value of any type other than a resource.</td>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_rewind">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_rewind"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L28">line 28</a></div>
-        <code>                    
-    <strong>rewind</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_current">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L156">line 156</a></div>
-        <code>                    <a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a>
-    <strong>current</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_key">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_key"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L48">line 48</a></div>
-        <code>                    mixed
-    <strong>key</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_next">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_next"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L57">line 57</a></div>
-        <code>                    mixed
-    <strong>next</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_valid">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_valid"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L66">line 66</a></div>
-        <code>                    bool
-    <strong>valid</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_all"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L76">line 76</a></div>
+        <div class="location">in <a href="../../Simples/Data/Resources/RecordsTrait.html#method_all"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/RecordsTrait.php#L19">line 19</a></div>
         <code>                    array
     <strong>all</strong>()
         </code>
@@ -694,7 +993,7 @@ which is a value of any type other than a resource.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getRecords">
-        <div class="location">in <a href="../../Simples/Data/CollectionAbstract.html#method_getRecords"><abbr title="Simples\Data\CollectionAbstract">CollectionAbstract</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/CollectionAbstract.php#L84">line 84</a></div>
+        <div class="location">in <a href="../../Simples/Data/Resources/RecordsTrait.html#method_getRecords"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/RecordsTrait.php#L27">line 27</a></div>
         <code>                    array
     <strong>getRecords</strong>()
         </code>
@@ -710,6 +1009,473 @@ which is a value of any type other than a resource.</td>
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_records">
+        <div class="location">in <a href="../../Simples/Data/Resources/RecordsTrait.html#method_records"><abbr title="Simples\Data\Resources\RecordsTrait">RecordsTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/RecordsTrait.php#L35">line 35</a></div>
+        <code>                    array
+    <strong>records</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_model">
+        <div class="location">in <a href="../../Simples/Data/Resources/ModelTrait.html#method_model"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L28">line 28</a></div>
+        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>model</strong>($model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Simples/Data/Resources/ModelTrait.html#method___get"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L43">line 43</a></div>
+        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>__get</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>is utilized for reading data from inaccessible members.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Simples/Data/Resources/ModelTrait.html#method___call"><abbr title="Simples\Data\Resources\ModelTrait">ModelTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ModelTrait.php#L66">line 66</a></div>
+        <code>                    mixed
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Ex.:
+  $result = Collection::make([new Example('apple'), new Example('orange')])
+     ->map->each->getFruit()->getRecords();
+  var_dump($result);
+  ["elppa", "egnaro"]</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_on">
+        <div class="location">in <a href="../../Simples/Data/Resources/MutationTrait.html#method_on"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/MutationTrait.php#L23">line 23</a></div>
+        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>on</strong>(string $field, callable $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_off">
+        <div class="location">in <a href="../../Simples/Data/Resources/MutationTrait.html#method_off"><abbr title="Simples\Data\Resources\MutationTrait">MutationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/MutationTrait.php#L33">line 33</a></div>
+        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>off</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_each">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_each"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L17">line 17</a></div>
+        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
+    <strong>each</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_map"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L30">line 30</a></div>
+        <code>                    array
+    <strong>map</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_filter"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L39">line 39</a></div>
+        <code>                    array
+    <strong>filter</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_size">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_size"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L47">line 47</a></div>
+        <code>                    int
+    <strong>size</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_length">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_length"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L55">line 55</a></div>
+        <code>                    int
+    <strong>length</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reduce">
+        <div class="location">in <a href="../../Simples/Data/Resources/ManipulationTrait.html#method_reduce"><abbr title="Simples\Data\Resources\ManipulationTrait">ManipulationTrait</abbr></a> at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/ManipulationTrait.php#L65">line 65</a></div>
+        <code>                    mixed
+    <strong>reduce</strong>(callable $callable, mixed $initial)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$initial</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>
@@ -780,374 +1546,6 @@ which is a value of any type other than a resource.</td>
                 <td>mixed</td>
                 <td>$model</td>
                 <td>(null)</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_model">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L56">line 56</a></div>
-        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>model</strong>($model)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___get">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L71">line 71</a></div>
-        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>__get</strong>($name)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>is utilized for reading data from inaccessible members.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$name</td>
-                <td>string</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___call">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L94">line 94</a></div>
-        <code>                    mixed
-    <strong>__call</strong>($name, $arguments)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Ex.:
-  $result = Collection::create([new Example('apple'), new Example('orange')])
-     ->map->each->getFruit()->getRecords();
-  var_dump($result);
-  ["elppa", "egnaro"]</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$name</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$arguments</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../Simples/Error/SimplesRunTimeError.html"><abbr title="Simples\Error\SimplesRunTimeError">SimplesRunTimeError</abbr></a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_each">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L119">line 119</a></div>
-        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>each</strong>(callable $callback)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>callable</td>
-                <td>$callback</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_map">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L131">line 131</a></div>
-        <code>                    array
-    <strong>map</strong>(callable $callback)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>callable</td>
-                <td>$callback</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_filter">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L140">line 140</a></div>
-        <code>                    array
-    <strong>filter</strong>(callable $callback)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>callable</td>
-                <td>$callback</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_size">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L148">line 148</a></div>
-        <code>                    int
-    <strong>size</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_on">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L170">line 170</a></div>
-        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>on</strong>(string $field, callable $callable)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>callable</td>
-                <td>$callable</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_off">
-        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Collection.php#L180">line 180</a></div>
-        <code>                    <a href="../../Simples/Data/Collection.html"><abbr title="Simples\Data\Collection">Collection</abbr></a>
-    <strong>off</strong>(string $field)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td></td>
             </tr>
             </table>
 

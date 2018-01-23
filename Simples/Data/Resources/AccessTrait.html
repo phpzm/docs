@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Simples\Model\Resource\ModelAggregation | Simples</title>
+    <title>Simples\Data\Resources\AccessTrait | Simples</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Simples_Model_Resource_ModelAggregation" data-root-path="../../../">
+    <body id="class" data-name="class:Simples_Data_Resources_AccessTrait" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,27 +66,27 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Model.html">Model</a></li><li class="backslash">\</li><li><a href="../../../Simples/Model/Resource.html">Resource</a></li><li class="backslash">\</li><li>ModelAggregation</li>
+                        <li><a href="../../../Simples.html">Simples</a></li><li class="backslash">\</li><li><a href="../../../Simples/Data.html">Data</a></li><li class="backslash">\</li><li><a href="../../../Simples/Data/Resources.html">Resources</a></li><li class="backslash">\</li><li>AccessTrait</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ModelAggregation
+            AccessTrait
                 
         </h1>
     </div>
 
     <p>    trait
-    <strong>ModelAggregation</strong>        (<a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php">View source</a>)
+    <strong>AccessTrait</strong>        (<a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php">View source</a>)
 </p>
 
         
     
 
             <div class="description">
-            <p>Class ModelAggregation</p>                                </div>
+            <p>Trait AccessTrait</p>                                </div>
     
     
     
@@ -96,13 +96,12 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    float
+                    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_sum">sum</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Whether a offset exists</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -110,32 +109,29 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_min">min</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Offset to retrieve</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_max">max</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Offset to set</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_aggregate">aggregate</a>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $alias, string $type, string $field = null, array $group = null)
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Offset to unset</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -145,34 +141,26 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_sum">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L21">line 21</a></div>
-        <code>                    float
-    <strong>sum</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <h3 id="method_offsetExists">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L23">line 23</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Whether a offset exists</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>An offset to check for.</td>
             </tr>
             </table>
 
@@ -181,7 +169,98 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>float</td>
+            <td>boolean</td>
+            <td>true on success or false on failure.
+</p></p>
+
+<p>&lt;</p>
+
+<p>p>
+The return value will be casted to boolean if non-boolean was returned.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L37">line 37</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Offset to retrieve</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to retrieve.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Can return all value types.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L54">line 54</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Offset to set</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to assign the value to.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
@@ -193,34 +272,26 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_min">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L32">line 32</a></div>
-        <code>                    mixed
-    <strong>min</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
+                    <h3 id="method_offsetUnset">
+        <div class="location">at         <a href="https://github.com/phpzm/data/blob/master/src/Resources/AccessTrait.php#L72">line 72</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Offset to unset</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>The offset to unset.</td>
             </tr>
             </table>
 
@@ -229,113 +300,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_max">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L43">line 43</a></div>
-        <code>                    mixed
-    <strong>max</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $field = null, string $aggregator = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$aggregator</td>
-                <td>(null)</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_aggregate">
-        <div class="location">at         <a href="https://github.com/phpzm/model/blob/master/src/Resource/ModelAggregation.php#L56">line 56</a></div>
-        <code>                    mixed
-    <strong>aggregate</strong>(<a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a> $filter, string $alias, string $type, string $field = null, array $group = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Simples/Data/Record.html"><abbr title="Simples\Data\Record">Record</abbr></a></td>
-                <td>$filter</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$alias</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$type</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$field</td>
-                <td>(null)</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$group</td>
-                <td>(null)</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
